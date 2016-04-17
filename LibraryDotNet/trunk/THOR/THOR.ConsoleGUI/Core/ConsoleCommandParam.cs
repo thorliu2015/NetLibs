@@ -32,6 +32,10 @@ namespace THOR.ConsoleGUI.Core
 
 		#region construct
 
+		/// <summary>
+		/// 构造一个命令行参数定义
+		/// </summary>
+		/// <param name="syntax"></param>
 		public ConsoleCommandParam(string syntax)
 		{
 			Regex regex = ConsoleCommand.GetCommandParamRegex();
@@ -50,10 +54,18 @@ namespace THOR.ConsoleGUI.Core
 
 			Optional = (prefix == "[");
 
-			//TODO: 转换defaultValue 至 DefaultValue
+			this.DefaultValue = defaultValue;
 		}
 
-		public ConsoleCommandParam(string paramType, string paramName, string paramDescription, object defaultValue, bool optional)
+		/// <summary>
+		/// 构造一个命令行参数定义
+		/// </summary>
+		/// <param name="paramType"></param>
+		/// <param name="paramName"></param>
+		/// <param name="paramDescription"></param>
+		/// <param name="defaultValue"></param>
+		/// <param name="optional"></param>
+		public ConsoleCommandParam(string paramType, string paramName, string paramDescription, string defaultValue, bool optional)
 		{
 			ParamType = paramType;
 			ParamName = paramName;
@@ -88,7 +100,7 @@ namespace THOR.ConsoleGUI.Core
 		/// <summary>
 		/// 参数默认值
 		/// </summary>
-		public object DefaultValue { get; protected set; }
+		public string DefaultValue { get; protected set; }
 
 		/// <summary>
 		/// 是否是可选参数

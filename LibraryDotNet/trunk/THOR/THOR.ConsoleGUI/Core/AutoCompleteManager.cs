@@ -35,6 +35,11 @@ namespace THOR.ConsoleGUI.Core
 
 		#region methods
 
+		/// <summary>
+		/// 更新输入框
+		/// </summary>
+		/// <param name="inputBox"></param>
+		/// <returns></returns>
 		static public bool Update(TextBox inputBox)
 		{
 			int selectedIndex = inputBox.SelectionStart;
@@ -137,18 +142,28 @@ namespace THOR.ConsoleGUI.Core
 		{
 			string result = "";
 
-			//TODO: 需要正式的实现匹配参数的逻辑
-
+			//查找匹配的指令
 			if (ConsoleManager.Current.CommandNames.Contains(name))
 			{
 				foreach (ConsoleCommand cmd in ConsoleManager.Current.Commands)
 				{
 					if (cmd.Name != name) continue;
 
+					//查找匹配的参数
 					if (index >= 0 && index < cmd.Params.Count)
 					{
 						ConsoleCommandParam p = cmd.Params[index];
 
+						//匹配默认参数
+						if (p.DefaultValue != null && p.DefaultValue.Trim().Length > 0)
+						{
+							if (p.DefaultValue.IndexOf(input) == 0)
+							{
+								return p.DefaultValue.Trim();
+							}
+						}
+
+						//匹配数据类型
 						if (!ConsoleManager.Current.ParamTypes.ContainsKey(p.ParamType)) continue;
 
 						IConsoleParamType paramType = ConsoleManager.Current.ParamTypes[p.ParamType];
