@@ -51,7 +51,7 @@
 			this.consoleOutput1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.consoleOutput1.Location = new System.Drawing.Point(0, 0);
 			this.consoleOutput1.Name = "consoleOutput1";
-			this.consoleOutput1.Size = new System.Drawing.Size(624, 445);
+			this.consoleOutput1.Size = new System.Drawing.Size(624, 423);
 			this.consoleOutput1.TabIndex = 1;
 			this.consoleOutput1.TabStop = false;
 			// 
@@ -61,8 +61,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(624, 445);
-			this.Controls.Add(this.consoleInput1);
 			this.Controls.Add(this.consoleOutput1);
+			this.Controls.Add(this.consoleInput1);
 			this.DoubleBuffered = true;
 			this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.Name = "FrmConsoleGUI";

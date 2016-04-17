@@ -1,0 +1,5 @@
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Images\bin\Debug\THOR.Images.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Images\bin\Debug\THOR.Images.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Images\obj\Debug\THOR.Images.csprojResolveAssemblyReference.cache
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Images\obj\Debug\THOR.Images.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Images\obj\Debug\THOR.Images.pdb

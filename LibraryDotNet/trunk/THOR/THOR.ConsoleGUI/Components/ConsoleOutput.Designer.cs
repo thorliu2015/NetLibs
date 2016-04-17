@@ -33,10 +33,10 @@
 			// 
 			// txtOutput
 			// 
-			this.txtOutput.BackColor = System.Drawing.Color.Black;
+			this.txtOutput.BackColor = System.Drawing.Color.White;
 			this.txtOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.txtOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.txtOutput.ForeColor = System.Drawing.Color.Black;
 			this.txtOutput.HideSelection = false;
 			this.txtOutput.Location = new System.Drawing.Point(0, 0);
 			this.txtOutput.Name = "txtOutput";

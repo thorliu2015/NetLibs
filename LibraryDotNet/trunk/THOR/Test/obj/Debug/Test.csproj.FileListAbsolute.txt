@@ -44,3 +44,33 @@ Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\Test\bin\D
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\Test\bin\Debug\SharpDX.DXGI.xml
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Windows.Editors.UI.dll
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Windows.Editors.UI.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\Test.exe.config
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\obj\Debug\Test.exe
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\obj\Debug\Test.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\Test.exe
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\Test.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\SharpDX.Direct2D1.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\SharpDX.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\SharpDX.DXGI.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.D2D.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Images.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Tiled.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Windows.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Windows.Editors.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Windows.Editors.UI.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.D2D.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Images.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Tiled.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Windows.Editors.UI.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Windows.Editors.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.Windows.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\THOR.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\SharpDX.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\SharpDX.Direct2D1.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\bin\Debug\SharpDX.DXGI.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\obj\Debug\Test.FormMain.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\obj\Debug\Test.Properties.Resources.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\obj\Debug\Test.Temp.TestForm.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\Test\obj\Debug\Test.csproj.GenerateResource.Cache

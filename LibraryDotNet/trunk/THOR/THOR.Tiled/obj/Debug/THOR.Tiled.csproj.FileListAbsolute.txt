@@ -1,0 +1,5 @@
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Tiled\bin\Debug\THOR.Tiled.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Tiled\bin\Debug\THOR.Tiled.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Tiled\obj\Debug\THOR.Tiled.csprojResolveAssemblyReference.cache
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Tiled\obj\Debug\THOR.Tiled.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Tiled\obj\Debug\THOR.Tiled.pdb

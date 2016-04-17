@@ -55,13 +55,13 @@ namespace THOR.ConsoleGUI.Components
 		/// <param name="content"></param>
 		public virtual void WriteLine(Color color, string content)
 		{
-			Write(color, content + "\r\n");
+			Write(color, "\r\n" + content);
 		}
 
 
 		public virtual void Copy(bool rtfmode)
 		{
-			if(rtfmode)
+			if (rtfmode)
 			{
 				System.Windows.Forms.Clipboard.SetText(txtOutput.Rtf, TextDataFormat.Rtf);
 			}
@@ -70,6 +70,6 @@ namespace THOR.ConsoleGUI.Components
 				System.Windows.Forms.Clipboard.SetText(txtOutput.Text, TextDataFormat.Text);
 			}
 		}
-		
+
 	}
 }

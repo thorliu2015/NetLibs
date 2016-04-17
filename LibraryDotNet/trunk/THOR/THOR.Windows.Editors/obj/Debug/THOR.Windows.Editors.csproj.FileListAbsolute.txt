@@ -37,3 +37,27 @@ Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR.Windo
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.Direct2D1.xml
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.xml
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.DXGI.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\THOR.Windows.Editors.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\THOR.Windows.Editors.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\THOR.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\THOR.Windows.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\THOR.D2D.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.Direct2D1.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.DXGI.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\THOR.Windows.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\THOR.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\THOR.D2D.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.Direct2D1.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\bin\Debug\SharpDX.DXGI.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.csprojResolveAssemblyReference.cache
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.Common.Components.ThorModelsNavigation.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.Common.Dialogs.DialogEditorSettings.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.Common.Dialogs.DialogEntityProperty.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.Common.Dialogs.DialogEntityTypeSelector.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.Common.Dialogs.FrmAbstractModule.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.Properties.Resources.resources
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.csproj.GenerateResource.Cache
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.Windows.Editors\obj\Debug\THOR.Windows.Editors.pdb
