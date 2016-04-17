@@ -8,3 +8,8 @@ Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\bin\D
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.csprojResolveAssemblyReference.cache
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.dll
 Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR\bin\Debug\THOR.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR\bin\Debug\THOR.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.csprojResolveAssemblyReference.cache
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.pdb

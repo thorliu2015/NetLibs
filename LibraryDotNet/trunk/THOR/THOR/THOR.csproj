@@ -46,6 +46,15 @@
     <Compile Include="Common\ThorCollection.cs" />
     <Compile Include="Files\XmlFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\Json\IJsonWrapper.cs" />
+    <Compile Include="Serialization\Json\JsonData.cs" />
+    <Compile Include="Serialization\Json\JsonException.cs" />
+    <Compile Include="Serialization\Json\JsonMapper.cs" />
+    <Compile Include="Serialization\Json\JsonMockWrapper.cs" />
+    <Compile Include="Serialization\Json\JsonReader.cs" />
+    <Compile Include="Serialization\Json\JsonWriter.cs" />
+    <Compile Include="Serialization\Json\Lexer.cs" />
+    <Compile Include="Serialization\Json\ParserToken.cs" />
     <Compile Include="Serialization\PList\PList.cs" />
     <Compile Include="Serialization\PList\PListArray.cs" />
     <Compile Include="Serialization\PList\PListBoolean.cs" />
@@ -62,6 +71,10 @@
     <Compile Include="Serialization\XmlEntities\XmlEntityEncoder.cs" />
     <Compile Include="Serialization\XmlEntities\XmlEntityPropertyAttribute.cs" />
     <Compile Include="Serialization\XmlEntities\XmlEntityPropertyMode.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Serialization\Json\sample.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

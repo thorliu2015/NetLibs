@@ -1,0 +1,11 @@
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\bin\Debug\THOR.D2D.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\bin\Debug\THOR.D2D.pdb
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\bin\Debug\SharpDX.Direct2D1.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\bin\Debug\SharpDX.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\bin\Debug\SharpDX.DXGI.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\bin\Debug\SharpDX.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\bin\Debug\SharpDX.Direct2D1.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\bin\Debug\SharpDX.DXGI.xml
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\obj\Debug\THOR.D2D.csprojResolveAssemblyReference.cache
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\obj\Debug\THOR.D2D.dll
+Y:\NetProjects\git\NetLibs\LibraryDotNet\trunk\THOR\THOR.D2D\obj\Debug\THOR.D2D.pdb
