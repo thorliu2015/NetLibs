@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!-- syntaxdefinition for TeX document 2001 by Mike Krueger (gleaned from Jedit) -->
+
+<SyntaxDefinition name = "Regex" extensions = ".regex">
+
+  <Digits name = "Digits" bold = "false" italic = "false" color = "Black"/>
+
+  <RuleSets>
+    <RuleSet ignorecase = "false" noescapesequences="false">
+      <Delimiters></Delimiters>
+      
+      
+
+      <!--数量定义-->
+      <Span name = "CountDefined" bold = "true" italic = "false" color = "Red" stopateol = "false">
+        <Begin>{</Begin>
+        <End>}</End>
+      </Span>
+
+      <!--字符定义-->
+      <Span name = "CountDefined" bold = "true" italic = "false" color = "Blue" stopateol = "false">
+        <Begin>[</Begin>
+        <End>]</End>
+      </Span>
+      
+      
+      <!--参数定义-->
+      <Span name = "ParamDefined" bold = "true" italic = "false" color = "Green" stopateol = "false">
+        <Begin>?&lt;</Begin>
+        <End>&gt;</End>
+      </Span>
+
+      <!--关键字定义-->
+      <KeyWords name = "Keywords1" bold = "true" italic = "false" color = "Blue">
+        <Key word = "\a" />
+        <Key word = "\b" />
+        <Key word = "\t" />
+        <Key word = "\r" />
+        <Key word = "\v" />
+        <Key word = "\f" />
+        <Key word = "\n" />
+        <Key word = "\e" />
+        <Key word = "\x" />
+        <Key word = "\c" />
+        <Key word = "\u" />
+        <Key word = "\p" />
+        <Key word = "\P" />
+        <Key word = "\w" />
+        <Key word = "\W" />
+        <Key word = "\s" />
+        <Key word = "\S" />
+        <Key word = "\d" />
+        <Key word = "\D" />
+        <Key word = "\A" />
+        <Key word = "\B" />
+        <Key word = "\z" />
+        <Key word = "\Z" />
+        <Key word = "\G" />
+        <Key word = "\k" />
+        <Key word = "." />
+      </KeyWords>
+
+      <!--数量关键词定义-->
+      <KeyWords name = "Keywords2" bold = "true" italic = "false" color = "Red">
+        <Key word = "^" />
+        <Key word = "$" />
+        <Key word = "|" />
+        <Key word = "*" />
+        <Key word = "+" />
+        <Key word = "?" />
+        <Key word = "#" />
+      </KeyWords>
+      
+    </RuleSet>
+  </RuleSets>
+
+</SyntaxDefinition>
+

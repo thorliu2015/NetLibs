@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C76DA9B-BCC1-4B5A-858A-49FC8D97FB8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THOR.Windows.Editors.UI</RootNamespace>
+    <AssemblyName>THOR.Windows.Editors.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\UIScene.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FrmUIModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FrmUIModule.Designer.cs">
+      <DependentUpon>FrmUIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frameworks\Core\ContentControl.cs" />
+    <Compile Include="Frameworks\Core\Control.cs" />
+    <Compile Include="Frameworks\Core\DependencyObject.cs" />
+    <Compile Include="Frameworks\Core\DispatcherObject.cs" />
+    <Compile Include="Frameworks\Core\Params\CommonParams.cs" />
+    <Compile Include="Frameworks\Core\FrameworkElement.cs" />
+    <Compile Include="Frameworks\Core\Panel.cs" />
+    <Compile Include="Frameworks\Core\UIElement.cs" />
+    <Compile Include="Frameworks\Core\Visual.cs" />
+    <Compile Include="Frameworks\Layouts\Grid.cs" />
+    <Compile Include="Frameworks\Layouts\StackPanel.cs" />
+    <Compile Include="Frameworks\Layouts\WrapPanel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Frameworks\Frameworks.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Frameworks\Slices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THOR.D2D\THOR.D2D.csproj">
+      <Project>{c6bc866d-6bc4-4857-8a71-ef16b534160b}</Project>
+      <Name>THOR.D2D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Images\THOR.Images.csproj">
+      <Project>{841794de-0e79-460e-872e-f57714768842}</Project>
+      <Name>THOR.Images</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Tiled\THOR.Tiled.csproj">
+      <Project>{24a81241-f928-4bd1-9718-d1d8f5408f50}</Project>
+      <Name>THOR.Tiled</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Windows.Editors\THOR.Windows.Editors.csproj">
+      <Project>{3A637285-5E93-4D43-8D44-404C819408B8}</Project>
+      <Name>THOR.Windows.Editors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Windows\THOR.Windows.csproj">
+      <Project>{984614BC-061E-42D0-A519-921D3C30F820}</Project>
+      <Name>THOR.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR\THOR.csproj">
+      <Project>{477B0A92-A2C2-4814-8FBF-DF3E3460589D}</Project>
+      <Name>THOR</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\FrmUIModule.resx">
+      <DependentUpon>FrmUIModule.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<Colors>
+	<!--通用-->
+	<Color Name="ControlDarkDarkDark" Dark="#000000" Light="#888888" Comment="通用控件最暗色部分的颜色"/>
+	<Color Name="ControlDarkDark" Dark="#111111" Light="#BDBBBD" Comment="通用控件暗色部分的颜色"/>
+	<Color Name="ControlDark" Dark="#222222" Light="#D7D7D7" Comment="通用控件浅暗色部分的颜色"/>
+	<Color Name="Control" Dark="#333333" Light="#E3E3E3" Comment="通用控件的颜色"/>
+	<Color Name="ControlLight" Dark="#444444" Light="#F0F0F0" Comment="通用控件的浅亮色部分的颜色"/>
+	<Color Name="ControlLightLight" Dark="#555555" Light="#F5F5F5" Comment="通用控件的高亮色部分的颜色"/>
+	<Color Name="ControlLightLightLight" Dark="#666666" Light="#FFFFFF" Comment="通用控件的最高亮色部分的颜色"/>
+	<Color Name="ControlText" Dark="#999999" Light="#000000" Comment="通用控件的文本颜色"/>
+	<Color Name="GrayText" Dark="#444444" Light="#999999" Comment="通用控件的灰色文本颜色"/>
+	<!--窗体-->
+	<Color Name="Window" Dark="ControlDarkDarkDark" Light="ControlLightLightLight" Comment="窗体背景颜色"/>
+	<Color Name="WindowFrame" Dark="ControlDarkDarkDark" Light="ControlDarkDarkDark" Comment="窗体框架颜色"/>
+	<Color Name="WindowText" Dark="ControlText" Light="ControlText" Comment="窗体标准文本颜色"/>
+	<Color Name="WindowTextShadow" Dark="ControlDarkDark" Light="ControlDark" Comment="窗体标准文本的阴影颜色"/>
+	<Color Name="WindowBackground" Dark="Control" Light="Control" Comment="窗体背景颜色"/>
+	<Color Name="WindowButtonHover" Dark="ControlLight" Light="ControlDark" Comment="窗体按钮选中时颜色"/>
+	<Color Name="WindowButtonPressed" Dark="ControlLightLight" Light="ControlDarkDark" Comment="窗体按钮选中时颜色"/>
+	<Color Name="WindowBorder" Dark="ControlLight" Light="ControlDarkDark" Comment="窗口边框颜色"/>
+	<!--选区-->
+	<Color Name="HighLight" Dark="#0099FF" Light="#0099FF" Comment="高亮区域背景颜色"/>
+	<Color Name="HighLightText" Dark="#FFFFFF" Light="#000000" Comment="高亮区域文本颜色"/>
+	<!--焦点-->
+	<Color Name="Focus" Dark="#0099FF" Light="#0099FF" Comment="焦点颜色"/>
+	<!--按钮-->
+	<!--面板-->
+	<Color Name="PanelBorder" Dark="#444444" Light="ControlDark" Comment="面板边框颜色"/>
+	<!--带区-->
+	<Color Name="BandDot" Dark="ControlLightLight" Light="ControlDarkDark" Comment="带区句柄颜色"/>
+	<!--分隔条-->
+	<Color Name="SplitterForeground" Dark="ControlLightLight" Light="ControlDarkDarkDark" Comment="分隔条前景颜色"/>
+	<Color Name="SplitterBackground" Dark="Control" Light="Control" Comment="分隔条前景颜色"/>
+	<!--滚动条-->
+	<Color Name="ScrollBarBackground" Dark="ControlDark" Light="ControlLightLight" Comment="滚动条背景颜色"/>
+	<Color Name="ScrollBarForeground" Dark="Control" Light="ControlDark" Comment="滚动条前景颜色"/>
+	<Color Name="ScrollBarForegroundHover" Dark="ControlLight" Light="ControlDarkDark" Comment="滚动条前景指向时颜色"/>
+	<Color Name="ScrollBarForegroundPressed" Dark="ControlLightLight" Light="ControlDarkDarkDark" Comment="滚动条前景按下时颜色"/>
+	<!--菜单-->
+	<Color Name="MenuBackground" Dark="ControlDark" Light="ControlLightLight" Comment="菜单背景颜色"/>
+	<!--工具栏-->
+	<!--字段-->
+	<!--列表-->
+	<!--树-->
+	<!--网格-->
+	<Color Name="GridFixedRowBackground" Dark="Control" Light="Control" Comment="网格固定行背景颜色"/>
+	<Color Name="GridFixedRowForeground" Dark="ControlText" Light="ControlText" Comment="网格固定行前景颜色"/>
+	<Color Name="GridFixedRowGrid" Dark="ControlLight" Light="ControlDark" Comment="网格固定行线条颜色"/>
+	<Color Name="GridFixedRowFocusBackground" Dark="ControlDark" Light="ControlDark" Comment="网格固定行聚焦背景颜色"/>
+	<Color Name="GridFixedColumnBackground" Dark="ControlDark" Light="ControlLight" Comment="网格固定列背景颜色"/>
+	<Color Name="GridFixedColumnForeground" Dark="ControlText" Light="ControlText" Comment="网格固定列前景颜色"/>
+	<Color Name="GridFixedColumnGrid" Dark="ControlLight" Light="ControlDark" Comment="网格固定列线条颜色"/>
+	<Color Name="GridFixedColumnFocusBackground" Dark="ControlDarkDark" Light="Control" Comment="网格固定列聚焦背景颜色"/>
+	<Color Name="GridGroupBackground" Dark="ControlDark" Light="ControlLightLight" Comment="网格分组单元背景颜色"/>
+	<Color Name="GridGroupForeground" Dark="ControlText" Light="ControlText" Comment="网格分组单元前景颜色"/>
+	<Color Name="GridGroupGrid" Dark="ControlLight" Light="ControlDark" Comment="网格分组单位线条颜色"/>
+	<Color Name="GridGroupFoldBorder" Dark="ControlLight" Light="ControlDarkDark" Comment="网格分组单元的折叠边框颜色"/>
+	<Color Name="GridGroupFoldFore" Dark="ControlLightLight" Light="ControlDarkDarkDark" Comment="网格分组单元的折叠前景颜色"/>
+	<Color Name="GridNormalBackground" Dark="Window" Light="Window" Comment="网格默认单元的背景颜色"/>
+	<Color Name="GridNormalForeground" Dark="WindowText" Light="WindowText" Comment="网格默认单元的前景颜色"/>
+	<Color Name="GridNormalGrid" Dark="ControlLight" Light="ControlDark" Comment="网格默认单元的线条颜色"/>
+	<Color Name="GridFocusBackground" Dark="Window" Light="Window" Comment="网格聚焦单元的背景颜色"/>
+	<Color Name="GridFocusForeground" Dark="WindowText" Light="WindowText" Comment="网格聚焦单元的前景颜色"/>
+	<Color Name="GridFocusGrid" Dark="ControlLightLightLight" Light="ControlDarkDarkDark" Comment="网格聚焦单元的线条颜色"/>
+	
+	<!--图片-->
+	<Color Name="ImageViewAlpha1" Dark="#292929" Light="Control" Comment="图片透明色1"/>
+	<Color Name="ImageViewAlpha2" Dark="#2F2F2F" Light="Control" Comment="图片透明色2"/>
+	<Color Name="ImageViewRect" Dark="ControlLight" Light="Control" Comment="图片矩形边框色"/>
+	
+</Colors>

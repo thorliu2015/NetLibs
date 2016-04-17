@@ -1,0 +1,125 @@
+﻿
+/*
+ * ThorComponentTheme
+ * liuqiang@2015/11/7 11:05:26
+ * ---- 8< ------------------
+ * NOTE
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+//---- 8< ------------------
+
+namespace THOR.Windows.Components.Drawing
+{
+	public enum ThorComponentThemes
+	{
+		Dark,
+		Light
+	}
+
+	/// <summary>
+	/// 界面控件主题
+	/// </summary>
+	public class ThorComponentTheme
+	{
+		#region constants
+
+		#endregion
+
+		#region variables
+
+		#endregion
+
+		#region construct
+
+		static public ThorComponentTheme Current { get; set; }
+		static ThorComponentTheme()
+		{
+			Current = Dark();
+			//Current = Light();
+		}
+
+		public ThorComponentTheme()
+		{
+			Theme = ThorComponentThemes.Light;
+		}
+
+		#endregion
+
+		#region methods
+
+		static public Color GetColor(string htmlColor)
+		{
+			return ColorTranslator.FromHtml(htmlColor);
+		}
+
+		/// <summary>
+		/// 黑色主题
+		/// </summary>
+		/// <returns></returns>
+		static public ThorComponentTheme Dark()
+		{
+			ThorComponentTheme theme = new ThorComponentTheme();
+			theme.Theme = ThorComponentThemes.Dark;
+
+			//theme.ControlLightLightColor = GetColor("#444444");
+
+			//$DarkColors
+
+			return theme;
+		}
+
+		/// <summary>
+		/// 白色主题
+		/// </summary>
+		/// <returns></returns>
+		static public ThorComponentTheme Light()
+		{
+			ThorComponentTheme theme = new ThorComponentTheme();
+			theme.Theme = ThorComponentThemes.Light;
+
+			//$LightColors
+
+			return theme;
+		}
+
+		/// <summary>
+		/// 设置主题
+		/// </summary>
+		/// <param name="theme"></param>
+		static public void SetTheme(ThorComponentThemes theme)
+		{
+			switch (theme)
+			{
+				case ThorComponentThemes.Dark:
+					Current = Dark();
+					break;
+
+				case ThorComponentThemes.Light:
+					Current = Light();
+					break;
+			}
+		}
+
+		#endregion
+
+		#region properties
+
+		public ThorComponentThemes Theme { get; set; }
+	
+		//$ColorProperties
+
+		#endregion
+
+		#region events
+
+		#endregion
+	}
+}

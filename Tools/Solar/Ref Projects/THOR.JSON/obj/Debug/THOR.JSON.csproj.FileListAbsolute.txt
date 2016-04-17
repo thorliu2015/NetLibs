@@ -1,0 +1,12 @@
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.JSON\bin\Debug\THOR.JSON.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.JSON\bin\Debug\THOR.JSON.pdb
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.JSON\obj\Debug\THOR.JSON.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.JSON\obj\Debug\THOR.JSON.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.JSON\bin\Debug\THOR.JSON.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.JSON\bin\Debug\THOR.JSON.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.JSON\obj\Debug\THOR.JSON.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.JSON\obj\Debug\THOR.JSON.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.JSON\bin\Debug\THOR.JSON.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.JSON\bin\Debug\THOR.JSON.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.JSON\obj\Debug\THOR.JSON.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.JSON\obj\Debug\THOR.JSON.pdb

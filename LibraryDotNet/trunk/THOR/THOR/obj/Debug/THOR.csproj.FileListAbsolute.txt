@@ -1,0 +1,10 @@
+\\psf\home\documents\visual studio 2012\Projects\THOR\THOR\bin\Debug\THOR.dll
+\\psf\home\documents\visual studio 2012\Projects\THOR\THOR\bin\Debug\THOR.pdb
+\\psf\home\documents\visual studio 2012\Projects\THOR\THOR\obj\Debug\THOR.dll
+\\psf\home\documents\visual studio 2012\Projects\THOR\THOR\obj\Debug\THOR.pdb
+\\psf\home\documents\visual studio 2012\Projects\THOR\THOR\obj\Debug\THOR.csprojResolveAssemblyReference.cache
+Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\bin\Debug\THOR.dll
+Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\bin\Debug\THOR.pdb
+Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.csprojResolveAssemblyReference.cache
+Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.dll
+Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\THOR\obj\Debug\THOR.pdb

@@ -1,0 +1,15 @@
+C:\Users\Thor\Documents\Visual Studio 2010\Projects\FlashDebugger\ISharpCodeTextEditor\Project\bin\ICSharpCode.TextEditor.dll
+C:\Users\Thor\Documents\Visual Studio 2010\Projects\FlashDebugger\ISharpCodeTextEditor\Project\bin\ICSharpCode.TextEditor.pdb
+C:\Users\Thor\Documents\Visual Studio 2010\Projects\FlashDebugger\ISharpCodeTextEditor\Project\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thor\Documents\Visual Studio 2010\Projects\FlashDebugger\ISharpCodeTextEditor\Project\obj\Debug\ICSharpCode.TextEditor.dll
+C:\Users\Thor\Documents\Visual Studio 2010\Projects\FlashDebugger\ISharpCodeTextEditor\Project\obj\Debug\ICSharpCode.TextEditor.pdb
+D:\FlashDebugger\Services\FlashDebugger\ISharpCodeTextEditor\Project\bin\ICSharpCode.TextEditor.dll
+D:\FlashDebugger\Services\FlashDebugger\ISharpCodeTextEditor\Project\bin\ICSharpCode.TextEditor.pdb
+D:\FlashDebugger\Services\FlashDebugger\ISharpCodeTextEditor\Project\obj\Debug\ResolveAssemblyReference.cache
+D:\FlashDebugger\Services\FlashDebugger\ISharpCodeTextEditor\Project\obj\Debug\ICSharpCode.TextEditor.dll
+D:\FlashDebugger\Services\FlashDebugger\ISharpCodeTextEditor\Project\obj\Debug\ICSharpCode.TextEditor.pdb
+C:\Users\THOR\Documents\Visual Studio 2012\Projects\RTSEditor\Ref Projects\ISharpCodeTextEditor\Project\bin\ICSharpCode.TextEditor.dll
+C:\Users\THOR\Documents\Visual Studio 2012\Projects\RTSEditor\Ref Projects\ISharpCodeTextEditor\Project\bin\ICSharpCode.TextEditor.pdb
+C:\Users\THOR\Documents\Visual Studio 2012\Projects\RTSEditor\Ref Projects\ISharpCodeTextEditor\Project\obj\Debug\ICSharpCode.TextEditor.csprojResolveAssemblyReference.cache
+C:\Users\THOR\Documents\Visual Studio 2012\Projects\RTSEditor\Ref Projects\ISharpCodeTextEditor\Project\obj\Debug\ICSharpCode.TextEditor.dll
+C:\Users\THOR\Documents\Visual Studio 2012\Projects\RTSEditor\Ref Projects\ISharpCodeTextEditor\Project\obj\Debug\ICSharpCode.TextEditor.pdb

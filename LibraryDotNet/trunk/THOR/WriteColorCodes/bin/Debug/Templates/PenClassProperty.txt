@@ -1,0 +1,6 @@
+﻿
+
+		/// <summary>
+		/// {1}
+		/// </summary>
+		static public Pen {0} {{ get {{ return new Pen(ThorBrushs.{0}); }} }}

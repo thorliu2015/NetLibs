@@ -1,0 +1,5 @@
+﻿
+		/// <summary>
+		/// {1}
+		/// </summary>
+		static public Color {0} {{ get {{ return ThorComponentTheme.Current.{0}; }} }}

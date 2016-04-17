@@ -1,0 +1,14 @@
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\bin\Release\THOR.Windows.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\bin\Release\THOR.Windows.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\bin\Release\ICSharpCode.TextEditor.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\bin\Release\THOR.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\bin\Release\ICSharpCode.TextEditor.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\bin\Release\THOR.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\obj\Release\THOR.Windows.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\obj\Release\THOR.Windows.Dialogs.FlatDialog.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\obj\Release\THOR.Windows.Dialogs.FlatForm.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\obj\Release\THOR.Windows.Dialogs.FlatToolBox.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\obj\Release\THOR.Windows.Properties.Resources.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\obj\Release\THOR.Windows.csproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\obj\Release\THOR.Windows.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows\obj\Release\THOR.Windows.pdb

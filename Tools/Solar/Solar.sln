@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solar", "Solar\Solar.csproj", "{A164CBAC-C04D-49EA-8653-A832644260E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarUIComponentTest", "SolarUIComponentTest\SolarUIComponentTest.csproj", "{F385A750-8FE6-4A3A-A5C0-A9F11303ACF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THOR.D2D", "Ref Projects\THOR.D2D\THOR.D2D.csproj", "{32966F89-6AD0-49E7-862C-3A3588D1D49F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THOR.JSON", "Ref Projects\THOR.JSON\THOR.JSON.csproj", "{A7605F87-10C7-422A-BF62-BA6F98341142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THOR.Utils", "Ref Projects\THOR.Utils\THOR.Utils.csproj", "{04A9C213-5942-429D-B17C-E74E700FFF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THOR.Windows.UI", "Ref Projects\THOR.Windows.UI\THOR.Windows.UI.csproj", "{2442F8F9-2042-4755-BAED-962F7BC2AFA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarEditor", "SolarEditor\SolarEditor.csproj", "{08D37284-4544-42AA-BD69-78348E4FD93E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A164CBAC-C04D-49EA-8653-A832644260E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A164CBAC-C04D-49EA-8653-A832644260E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A164CBAC-C04D-49EA-8653-A832644260E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A164CBAC-C04D-49EA-8653-A832644260E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F385A750-8FE6-4A3A-A5C0-A9F11303ACF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F385A750-8FE6-4A3A-A5C0-A9F11303ACF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F385A750-8FE6-4A3A-A5C0-A9F11303ACF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F385A750-8FE6-4A3A-A5C0-A9F11303ACF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32966F89-6AD0-49E7-862C-3A3588D1D49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32966F89-6AD0-49E7-862C-3A3588D1D49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32966F89-6AD0-49E7-862C-3A3588D1D49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32966F89-6AD0-49E7-862C-3A3588D1D49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7605F87-10C7-422A-BF62-BA6F98341142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7605F87-10C7-422A-BF62-BA6F98341142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7605F87-10C7-422A-BF62-BA6F98341142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7605F87-10C7-422A-BF62-BA6F98341142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A9C213-5942-429D-B17C-E74E700FFF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A9C213-5942-429D-B17C-E74E700FFF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A9C213-5942-429D-B17C-E74E700FFF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A9C213-5942-429D-B17C-E74E700FFF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2442F8F9-2042-4755-BAED-962F7BC2AFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2442F8F9-2042-4755-BAED-962F7BC2AFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2442F8F9-2042-4755-BAED-962F7BC2AFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2442F8F9-2042-4755-BAED-962F7BC2AFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D37284-4544-42AA-BD69-78348E4FD93E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D37284-4544-42AA-BD69-78348E4FD93E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D37284-4544-42AA-BD69-78348E4FD93E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D37284-4544-42AA-BD69-78348E4FD93E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

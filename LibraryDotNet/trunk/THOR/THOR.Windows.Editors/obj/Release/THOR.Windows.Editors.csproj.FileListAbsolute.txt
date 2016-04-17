@@ -1,0 +1,4 @@
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows.Editors\bin\Release\THOR.Windows.Editors.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows.Editors\bin\Release\THOR.Windows.Editors.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows.Editors\obj\Release\THOR.Windows.Editors.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR.Windows.Editors\obj\Release\THOR.Windows.Editors.pdb

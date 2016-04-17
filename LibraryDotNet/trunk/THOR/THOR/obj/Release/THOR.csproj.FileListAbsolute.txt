@@ -1,0 +1,4 @@
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR\bin\Release\THOR.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR\bin\Release\THOR.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR\obj\Release\THOR.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\THOR\THOR\obj\Release\THOR.pdb

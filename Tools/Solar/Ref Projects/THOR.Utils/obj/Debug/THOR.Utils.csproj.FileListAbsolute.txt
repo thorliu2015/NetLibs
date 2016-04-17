@@ -1,0 +1,23 @@
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Utils\bin\Debug\THOR.Utils.dll
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Utils\bin\Debug\THOR.Utils.pdb
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Utils\obj\Debug\ResolveAssemblyReference.cache
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Utils\obj\Debug\THOR.Utils.dll
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Utils\obj\Debug\THOR.Utils.pdb
+E:\projects\THOR.Windows.UI\THOR.Utils\bin\Debug\THOR.Utils.dll
+E:\projects\THOR.Windows.UI\THOR.Utils\bin\Debug\THOR.Utils.pdb
+E:\projects\THOR.Windows.UI\THOR.Utils\obj\Debug\THOR.Utils.dll
+E:\projects\THOR.Windows.UI\THOR.Utils\obj\Debug\THOR.Utils.pdb
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Utils\bin\Debug\THOR.Utils.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Utils\bin\Debug\THOR.Utils.pdb
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Utils\obj\Debug\THOR.Utils.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Utils\obj\Debug\THOR.Utils.pdb
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Utils\obj\Debug\THOR.Utils.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Utils\bin\Debug\THOR.Utils.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Utils\bin\Debug\THOR.Utils.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Utils\obj\Debug\THOR.Utils.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Utils\obj\Debug\THOR.Utils.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Utils\obj\Debug\THOR.Utils.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Utils\bin\Debug\THOR.Utils.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Utils\bin\Debug\THOR.Utils.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Utils\obj\Debug\THOR.Utils.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Utils\obj\Debug\THOR.Utils.pdb

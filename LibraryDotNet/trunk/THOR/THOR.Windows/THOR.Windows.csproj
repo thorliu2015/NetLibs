@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{984614BC-061E-42D0-A519-921D3C30F820}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THOR.Windows</RootNamespace>
+    <AssemblyName>THOR.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Common\ThorBand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorFlatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorScrollView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorUI.cs" />
+    <Compile Include="Components\Common\ThorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Common\ThorUserControl.Designer.cs">
+      <DependentUpon>ThorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Common\ThorVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Common\Win32.cs" />
+    <Compile Include="Components\D2D\ThorDirect2DView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Drawing\ThorBrushs.cs" />
+    <Compile Include="Components\Drawing\ThorColors.cs" />
+    <Compile Include="Components\Drawing\ThorComponentTheme.cs" />
+    <Compile Include="Components\Drawing\ThorControlPaint.cs" />
+    <Compile Include="Components\Drawing\ThorPens.cs" />
+    <Compile Include="Components\Drawing\ThorScale9GridPaint.cs" />
+    <Compile Include="Components\Fields\ThorAbstractDomainField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Fields\ThorAbstractField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Fields\ThorAbstractPopupField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Fields\ThorNumbericField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Fields\ThorTextField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ThorGrids\Models\ThorDataTableCellButton.cs" />
+    <Compile Include="Components\ThorGrids\TypeConverters\IThorTypeConverter.cs" />
+    <Compile Include="Components\ThorGrids\Core\ThorAbstractGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ThorGrids\Core\ThorGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ThorGrids\Core\ThorAbstractGridRender.cs" />
+    <Compile Include="Components\ThorGrids\Core\ThorGridRender.cs" />
+    <Compile Include="Components\ThorGrids\Core\ThorGridRenderArgs.cs" />
+    <Compile Include="Components\ThorGrids\Core\ThorGridSelectionManager.cs" />
+    <Compile Include="Components\ThorGrids\Interactives\IEditorInteractive.cs" />
+    <Compile Include="Components\ThorGrids\Interactives\ThorAbstractEditorInteractive.cs" />
+    <Compile Include="Components\ThorGrids\Interactives\ThorGridCellEditArgs.cs" />
+    <Compile Include="Components\ThorGrids\Models\ThorDataTable.cs" />
+    <Compile Include="Components\ThorGrids\Models\ThorDataTableCell.cs" />
+    <Compile Include="Components\ThorGrids\Models\ThorDataTableColumn.cs" />
+    <Compile Include="Components\ThorGrids\Models\ThorDataTableMember.cs" />
+    <Compile Include="Components\ThorGrids\Models\ThorDataTableMemberCollection.cs" />
+    <Compile Include="Components\ThorGrids\Models\ThorDataTableRow.cs" />
+    <Compile Include="Components\ThorGrids\ThorList\ThorListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ThorGrids\ThorList\ThorListView.cs" />
+    <Compile Include="Components\ThorGrids\ThorPropertyGrid\ThorPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ThorGrids\ThorPropertyGrid\ThorPropertyGridDataTableBuilder.cs" />
+    <Compile Include="Components\ThorGrids\ThorTree\ThorTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ThorGrids\ThorTree\ThorTreeViewRender.cs" />
+    <Compile Include="Components\ThorGrids\TypeConverters\ThorTypeConverter.cs" />
+    <Compile Include="Components\ThorGrids\Utils\ThorDataTableFinder.cs" />
+    <Compile Include="Components\Tools\Renders\ThorToolStripRender.cs" />
+    <Compile Include="Components\Tools\ThorContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Tools\ThorMainMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Tools\ThorStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Tools\ThorToolBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FlatDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FlatDialog.Designer.cs">
+      <DependentUpon>FlatDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FlatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FlatForm.Designer.cs">
+      <DependentUpon>FlatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FlatMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FlatPopuper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FlatSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FlatSplash.Designer.cs">
+      <DependentUpon>FlatSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FlatToolBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SkinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Languages\ThorLanguages.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ApplicationOptions.cs" />
+    <Compile Include="Utils\ApplicationUtils.cs" />
+    <Compile Include="Utils\KeyUtils.cs" />
+    <Compile Include="Utils\ThorControlMeasure.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\Codes\" />
+    <Folder Include="Components\ThorGrids\ThorDataGrids\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\FlatDialog.resx">
+      <DependentUpon>FlatDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FlatForm.resx">
+      <DependentUpon>FlatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FlatSplash.resx">
+      <DependentUpon>FlatSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FlatToolBox.resx">
+      <DependentUpon>FlatToolBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THOR.D2D\THOR.D2D.csproj">
+      <Project>{c6bc866d-6bc4-4857-8a71-ef16b534160b}</Project>
+      <Name>THOR.D2D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR\THOR.csproj">
+      <Project>{477b0a92-a2c2-4814-8fbf-df3e3460589d}</Project>
+      <Name>THOR</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowDown3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowLeft3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowRight3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowUp3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormCloseB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormCloseW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormMaxB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormMaxW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormMinB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormMinW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormRestoreB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormRestoreW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MsgBox_Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MsgBox_Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MsgBox_Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MsgBox_Waring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormGlow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

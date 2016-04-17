@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A637285-5E93-4D43-8D44-404C819408B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THOR.Windows.Editors</RootNamespace>
+    <AssemblyName>THOR.Windows.Editors</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Components\ThorModelsNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\Components\ThorModelsNavigation.Designer.cs">
+      <DependentUpon>ThorModelsNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Core\EditorModule.cs" />
+    <Compile Include="Common\Core\EditorModuleDataProvider.cs" />
+    <Compile Include="Common\Core\EditorModuleEntityType.cs" />
+    <Compile Include="Common\Core\IEditorLoadMethod.cs" />
+    <Compile Include="Common\Core\IEditorSaveMethod.cs" />
+    <Compile Include="Common\Core\ThorEditorManager.cs" />
+    <Compile Include="Common\Core\XmlLoadMethod.cs" />
+    <Compile Include="Common\Core\XmlSaveMethod.cs" />
+    <Compile Include="Common\Data\CEntity.cs" />
+    <Compile Include="Common\Data\CEntityPool.cs" />
+    <Compile Include="Common\Data\CEntityTableDataBuilder.cs" />
+    <Compile Include="Common\Dialogs\DialogEditorSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Dialogs\DialogEditorSettings.Designer.cs">
+      <DependentUpon>DialogEditorSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Dialogs\DialogEntityProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Dialogs\DialogEntityProperty.Designer.cs">
+      <DependentUpon>DialogEntityProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Dialogs\DialogEntityTypeSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Dialogs\DialogEntityTypeSelector.Designer.cs">
+      <DependentUpon>DialogEntityTypeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Dialogs\FrmAbstractModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Dialogs\FrmAbstractModule.Designer.cs">
+      <DependentUpon>FrmAbstractModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Dialogs\FrmModuleExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ThorEditorTypeIcons.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\THOR.Windows\THOR.Windows.csproj">
+      <Project>{984614BC-061E-42D0-A519-921D3C30F820}</Project>
+      <Name>THOR.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR\THOR.csproj">
+      <Project>{477B0A92-A2C2-4814-8FBF-DF3E3460589D}</Project>
+      <Name>THOR</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Components\ThorModelsNavigation.resx">
+      <DependentUpon>ThorModelsNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Dialogs\DialogEditorSettings.resx">
+      <DependentUpon>DialogEditorSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Dialogs\DialogEntityProperty.resx">
+      <DependentUpon>DialogEntityProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Dialogs\DialogEntityTypeSelector.resx">
+      <DependentUpon>DialogEntityTypeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Dialogs\FrmAbstractModule.resx">
+      <DependentUpon>FrmAbstractModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

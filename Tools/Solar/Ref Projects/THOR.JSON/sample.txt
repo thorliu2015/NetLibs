@@ -1,0 +1,16 @@
+﻿
+
+
+JsonData data2 = new JsonData();
+
+data2["name"] = "peiandsky";
+data2["info"] = new JsonData();
+data2["info"]["sex"] = "male";
+data2["info"]["age"] = 28;
+
+string  json2 = data2.ToJson();
+
+
+----------------------------------------
+
+JsonMapper.ToObject(str)

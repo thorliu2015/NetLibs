@@ -1,0 +1,49 @@
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\THOR.D2D.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\THOR.D2D.pdb
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.Direct3D10.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.DXGI.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.xml
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.D3DCompiler.xml
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.Direct3D10.xml
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\bin\Debug\SharpDX.DXGI.xml
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\obj\Debug\THOR.D2D.D2DCanvas.resources
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\obj\Debug\THOR.D2D.csproj.GenerateResource.Cache
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\obj\Debug\THOR.D2D.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\THOR.D2D\obj\Debug\THOR.D2D.pdb
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\THOR.D2D.dll
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\THOR.D2D.pdb
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.D3DCompiler.dll
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.Direct2D1.dll
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.Direct3D10.dll
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.dll
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.DXGI.dll
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.xml
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.D3DCompiler.xml
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.Direct2D1.xml
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.Direct3D10.xml
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\bin\Debug\SharpDX.DXGI.xml
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.D2DCanvas.resources
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.csproj.GenerateResource.Cache
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.dll
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.D2DCanvas.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.csproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\obj\Debug\THOR.D2D.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\THOR.D2D.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\THOR.D2D.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.D3DCompiler.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.Direct2D1.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.Direct3D10.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.DXGI.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.xml
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.D3DCompiler.xml
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.Direct2D1.xml
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.Direct3D10.xml
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.D2D\bin\Debug\SharpDX.DXGI.xml

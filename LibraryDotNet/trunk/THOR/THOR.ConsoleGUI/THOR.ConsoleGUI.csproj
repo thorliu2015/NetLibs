@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E63813C2-ACA4-478D-B09F-D0FE3232F2B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THOR.ConsoleGUI</RootNamespace>
+    <AssemblyName>THOR.ConsoleGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\ConsoleInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ConsoleInput.Designer.cs">
+      <DependentUpon>ConsoleInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ConsoleOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ConsoleOutput.Designer.cs">
+      <DependentUpon>ConsoleOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\AutoCompleteManager.cs" />
+    <Compile Include="Core\ConsoleCommand.cs" />
+    <Compile Include="Core\ConsoleCommandExecutor.cs" />
+    <Compile Include="Core\ConsoleCommandLine.cs" />
+    <Compile Include="Core\ConsoleCommandParam.cs" />
+    <Compile Include="Core\ConsoleManager.cs" />
+    <Compile Include="Core\IConsoleCommandExecutor.cs" />
+    <Compile Include="Core\IConsoleParamType.cs" />
+    <Compile Include="Core\ThorConsoleGUI.cs" />
+    <Compile Include="FrmConsoleGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsoleGUI.Designer.cs">
+      <DependentUpon>FrmConsoleGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamTypes\ConsoleParamBoolean.cs" />
+    <Compile Include="ParamTypes\ConsoleParamNumbers.cs" />
+    <Compile Include="ParamTypes\ConsoleParamPathFile.cs" />
+    <Compile Include="ParamTypes\ConsoleParamPathFolder.cs" />
+    <Compile Include="ParamTypes\ConsoleParamString.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\ConsoleInput.resx">
+      <DependentUpon>ConsoleInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ConsoleOutput.resx">
+      <DependentUpon>ConsoleOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsoleGUI.resx">
+      <DependentUpon>FrmConsoleGUI.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THOR.Windows\THOR.Windows.csproj">
+      <Project>{984614bc-061e-42d0-a519-921d3c30f820}</Project>
+      <Name>THOR.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

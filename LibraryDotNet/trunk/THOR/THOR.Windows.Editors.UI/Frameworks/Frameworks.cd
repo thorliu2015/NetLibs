@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Core.DispatcherObject" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Core\DispatcherObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Core.DependencyObject" Collapsed="true">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Core\DependencyObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Core.Visual" Collapsed="true">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Core\Visual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Core.ContentControl" Collapsed="true">
+    <Position X="4.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Core\ContentControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Core.UIElement" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Core\UIElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Core.FrameworkElement" Collapsed="true">
+    <Position X="4.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Core\FrameworkElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Core.Control" Collapsed="true">
+    <Position X="4.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Core\Control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Core.Panel" Collapsed="true">
+    <Position X="6.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Core\Panel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Layouts.Grid" Collapsed="true">
+    <Position X="6.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Layouts\Grid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Layouts.StackPanel" Collapsed="true">
+    <Position X="8.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Layouts\StackPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="THOR.Windows.Editors.UI.Frameworks.Layouts.WrapPanel" Collapsed="true">
+    <Position X="10.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frameworks\Layouts\WrapPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Consolas" Size="8.25" />
+</ClassDiagram>

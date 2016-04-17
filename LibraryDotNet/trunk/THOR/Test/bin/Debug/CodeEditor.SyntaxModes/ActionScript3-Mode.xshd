@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<!-- syntaxdefinition for ActionScript 3.0 by Thor Liu -->
+
+<SyntaxDefinition name ="ActionScript3" extensions = ".as">
+	
+	<Properties>
+		<Property name="LineComment" value="//"/>
+	</Properties>
+
+	<Digits name ="Digits" bold ="false" italic ="false" color ="DarkBlue"/>
+
+	<RuleSets>
+		<RuleSet ignorecase="false">
+			<Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+
+			<Span name = "PreprocessorDirectives" rule = "PreprocessorSet" bold="false" italic="false" color="Green" stopateol = "true">
+				<Begin>#</Begin>
+			</Span>
+
+			<Span name = "DocLineComment" rule = "DocCommentSet" bold = "false" italic = "false" color = "Green" stopateol = "false">
+				<Begin>/**</Begin>
+				<End>*/</End>
+			</Span>
+
+			<Span name = "LineComment" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "Green" stopateol = "true">
+				<Begin>//</Begin>
+			</Span>
+
+			<Span name = "BlockComment" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "Green" stopateol = "false">
+				<Begin>/*</Begin>
+				<End>*/</End>
+			</Span>
+
+			<Span name = "String" bold = "false" italic = "false" color = "#999999" stopateol = "true">
+				<Begin>"</Begin>
+				<End>"</End>
+			</Span>
+
+			<MarkPrevious bold = "true" italic = "false" color = "#003399">(</MarkPrevious>
+
+			<!--操作符-->			
+			<KeyWords name = "Punctuation" bold = "false" italic = "false" color = "#330000">
+				<Key word = "?" />
+				<Key word = "," />
+				<Key word = "." />
+				<Key word = ";" />
+				<Key word = "(" />
+				<Key word = ")" />
+				<Key word = "[" />
+				<Key word = "]" />
+				<Key word = "{" />
+				<Key word = "}" />
+				<Key word = "+" />
+				<Key word = "-" />
+				<Key word = "/" />
+				<Key word = "%" />
+				<Key word = "*" />
+				<Key word = "&lt;" />
+				<Key word = "&gt;" />
+				<Key word = "^" />
+				<Key word = "=" />
+				<Key word = "~" />
+				<Key word = "!" />
+				<Key word = "|" />
+				<Key word = "&amp;" />
+			</KeyWords>
+
+			
+			<!--访问符-->
+			<KeyWords name = "AccessKeywords" bold="true" italic="false" color="#0066ff">
+				<Key word = "this" />
+				<Key word = "super" />
+			</KeyWords>
+
+			<!--操作符关键字-->
+			<KeyWords name = "OperatorKeywords" bold="true" italic="false" color="#0066ff">
+				<Key word = "as" />
+				<Key word = "is" />
+				<Key word = "new" />
+				<Key word = "typeof" />
+				<Key word = "true" />
+				<Key word = "false" />
+				<Key word = "var" />
+			</KeyWords>
+
+			
+			<!--判定-->
+			<KeyWords name = "SelectionStatements" bold="true" italic="false" color="#0066ff">
+				<Key word = "else" />
+				<Key word = "if" />
+				<Key word = "switch" />
+				<Key word = "case" />
+				<Key word = "default" />
+			</KeyWords>
+
+			<!--循环-->
+			<KeyWords name = "IterationStatements" bold="true" italic="false" color="#0066ff">
+				<Key word = "do" />
+				<Key word = "for" />
+				<Key word = "each" />
+				<Key word = "in" />
+				<Key word = "while" />
+			</KeyWords>
+
+			<!--跳出-->
+			<KeyWords name = "JumpStatements" bold="false" italic="false" color="#0066ff">
+				<Key word = "break" />
+				<Key word = "continue" />
+				<Key word = "return" />
+			</KeyWords>
+
+			<!--异常-->
+			<KeyWords name = "ExceptionHandlingStatements" bold="true" italic="false" color="#0066ff">
+				<Key word = "try" />
+				<Key word = "throw" />
+				<Key word = "catch" />
+				<Key word = "finally" />
+			</KeyWords>			
+
+			<!--值类型-->
+			<KeyWords name = "ValueTypes" bold="true" italic="false" color="#0066ff">
+				<Key word = "XML" />
+				<Key word = "Boolean" />
+				<Key word = "Number" />
+				<Key word = "String" />
+				<Key word = "Date" />
+				<Key word = "RegExp" />
+				<Key word = "Array" />
+				<Key word = "int" />
+				<Key word = "uint" />
+			</KeyWords>
+
+			<!--引用类型-->
+			<KeyWords name = "ReferenceTypes" bold="false" italic="false" color="#0066ff">
+				<Key word = "class" />
+				<Key word = "extends" />
+				<Key word = "implements" />
+				<Key word = "interface" />
+				<Key word = "function" />
+			</KeyWords>
+
+			<!--空值-->
+			<KeyWords name = "Void" bold="false" italic="false" color="#0066ff">
+				<Key word = "void" />
+			</KeyWords>
+
+		
+
+			<!--修饰符-->
+			<KeyWords name = "Modifiers" bold="false" italic="false" color="#0066ff">
+				<Key word = "const" />
+				<Key word = "override" />
+				<Key word = "dynamic" />
+				<Key word = "static" />
+			</KeyWords>
+
+			<!--访问限定符-->
+			<KeyWords name = "AccessModifiers" bold="true" italic="false" color="#0066ff">
+				<Key word = "public" />
+				<Key word = "protected" />
+				<Key word = "private" />
+				<Key word = "internal" />
+			</KeyWords>
+
+			<!--命名空间和包-->
+			<KeyWords name = "NameSpaces" bold="true" italic="false" color="#0066ff">
+				<Key word = "namespace" />
+				<Key word = "package" />
+				<Key word = "use" />
+				<Key word = "import" />
+			</KeyWords>
+
+			<!--读写-->
+			<KeyWords name = "GetSet" bold="false" italic="false" color="#0066ff">
+				<Key word = "get" />
+				<Key word = "set" />
+			</KeyWords>
+
+			<!--值-->
+			<KeyWords name = "Literals" bold="true" italic="false" color="#0066ff">
+				<Key word = "null" />
+				<Key word = "undefined" />
+				<Key word = "NaN" />
+			</KeyWords>
+		</RuleSet>
+
+		<RuleSet name = "CommentMarkerSet" ignorecase = "false">
+			<Delimiters>&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+			<KeyWords name = "ErrorWords" bold="true" italic="false" color="#990000">
+				<Key word = "TODO" />
+				<Key word = "FIXME" />
+			</KeyWords>
+		</RuleSet>
+
+		<RuleSet name = "DocCommentSet" ignorecase = "false">
+			<Delimiters>&lt;&gt;~!%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+
+			<Span name = "XmlTag" rule = "XmlDocSet" bold = "false" italic = "false" color = "#999999" stopateol = "true">
+				<Begin>&lt;</Begin>
+				<End>&gt;</End>
+			</Span>
+
+			<KeyWords name = "ErrorWords" bold="true" italic="false" color="#990000">
+				<Key word = "TODO" />
+				<Key word = "FIXME" />
+			</KeyWords>
+
+			<KeyWords name = "WarningWords" bold="true" italic="false" color="#000099">
+				<Key word = "@author" />
+				<Key word = "@return" />
+				<Key word = "@param" />
+				<Key word = "@inheritDoc" />
+				<Key word = "@copy" />
+				<Key word = "@default" />
+				<Key word = "@eventType" />
+				<Key word = "@see" />
+				<Key word = "@example" />
+				<Key word = "@exampleText" />
+				<Key word = "@internal" />
+				<Key word = "@private" />
+			</KeyWords>
+		</RuleSet>
+
+		<RuleSet name = "PreprocessorSet" ignorecase="false">
+			<Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+
+			<KeyWords name = "PreprocessorDirectives" bold="true" italic="false" color="Green">
+				<Key word = "if" />
+				<Key word = "else" />
+				<Key word = "elif" />
+				<Key word = "endif" />
+				<Key word = "define" />
+				<Key word = "undef" />
+				<Key word = "warning" />
+				<Key word = "error" />
+				<Key word = "line" />
+				<Key word = "region" />
+				<Key word = "endregion" />
+				<Key word = "pragma" />
+			</KeyWords>
+		</RuleSet>
+
+		<RuleSet name = "XmlDocSet" ignorecase = "false">
+			<Delimiters>&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+
+			<Span name = "String" bold = "true" italic = "false" color = "Silver" stopateol = "true">
+				<Begin>"</Begin>
+				<End>"</End>
+			</Span>
+
+
+			<KeyWords name = "Punctuation" bold = "true" italic = "false" color = "Gray">
+				<Key word = "/" />
+				<Key word = "|" />
+				<Key word = "=" />
+			</KeyWords>
+
+			<KeyWords name = "SpecialComment" bold="true" italic="false" color="Gray">
+				<Key word = "listing" />
+				<Key word = "code" />
+				<Key word = "b" />
+				<Key word = "u" />
+				<Key word = "img" />
+				<Key word = "a" />
+			</KeyWords>
+		</RuleSet>
+	</RuleSets>
+	
+</SyntaxDefinition>
+

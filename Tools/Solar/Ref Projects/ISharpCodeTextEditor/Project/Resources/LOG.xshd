@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<!-- syntaxdefinition for BAT 2000 by Mike Krueger -->
+<SyntaxDefinition name = "LOG" extensions = ".log">
+
+	<Properties>
+		<Property name="LineComment" value="//"/>
+	</Properties>
+
+	<Digits name = "Digits" bold = "false" italic = "false" color = "DarkBlue"/>
+
+	<RuleSets>
+		<RuleSet ignorecase="true">
+			<Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+
+		
+			<Span name = "Information" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "#bbbbbb" stopateol = "false">
+				<Begin>[I]</Begin>
+				<End>;</End>
+			</Span>
+
+			<Span name = "Debug" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "#000033" stopateol = "false">
+				<Begin>[D]</Begin>
+				<End>;</End>
+			</Span>
+
+			<Span name = "Waring" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "#0099ff" stopateol = "false">
+				<Begin>[W]</Begin>
+				<End>;</End>
+			</Span>
+
+			<Span name = "Error" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "#cc3300" stopateol = "false">
+				<Begin>[E]</Begin>
+				<End>;</End>
+			</Span>
+
+			<Span name = "Fatal" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "#ff3300" stopateol = "false">
+				<Begin>[F]</Begin>
+				<End>;</End>
+			</Span>
+		</RuleSet>
+
+		<RuleSet name = "CommentMarkerSet" ignorecase = "false">
+			<Delimiters>&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+		</RuleSet>
+		
+	</RuleSets>
+</SyntaxDefinition>

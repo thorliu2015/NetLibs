@@ -1,0 +1,57 @@
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\bin\Debug\THOR.Windows.UI.dll
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\bin\Debug\THOR.Windows.UI.pdb
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\ResolveAssemblyReference.cache
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.dll
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.pdb
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Properties.Resources.resources
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\ResGen.read.1.tlog
+c:\users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\ResGen.write.1.tlog
+C:\Users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.DialogBase.resources
+C:\Users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.FormBase.resources
+C:\Users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\bin\Debug\ICSharpCode.TextEditor.dll
+C:\Users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\bin\Debug\ICSharpCode.TextEditor.pdb
+C:\Users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.CodeEditor.resources
+C:\Users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.TLinkLabel.resources
+C:\Users\thor\documents\visual studio 2010\Projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.GroupLabel.resources
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.csprojResolveAssemblyReference.cache
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.CodeEditor.resources
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.GroupLabel.resources
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.TLinkLabel.resources
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.DialogBase.resources
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.FormBase.resources
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Properties.Resources.resources
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.csproj.GenerateResource.Cache
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.dll
+E:\projects\THOR.Windows.UI\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.pdb
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\bin\Debug\THOR.Windows.UI.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\bin\Debug\THOR.Windows.UI.pdb
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.GroupLabel.resources
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.TLinkLabel.resources
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.DialogBase.resources
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.FormBase.resources
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Properties.Resources.resources
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.csproj.GenerateResource.Cache
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.dll
+C:\Users\THOR\documents\visual studio 2012\Projects\RTSEditor\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\bin\Debug\THOR.Windows.UI.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\bin\Debug\THOR.Windows.UI.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.GroupLabel.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.TLinkLabel.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.DialogBase.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.FormBase.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Properties.Resources.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.csproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.pdb
+\\psf\home\documents\visual studio 2012\Projects\SolarSystem\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\bin\Debug\THOR.Windows.UI.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\bin\Debug\THOR.Windows.UI.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.GroupLabel.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Components.TLinkLabel.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.DialogBase.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.FormBase.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Properties.Resources.resources
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.csproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\Solar\Ref Projects\THOR.Windows.UI\obj\Debug\THOR.Windows.UI.Forms.ToolBoxBase.resources

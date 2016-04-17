@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<images>
+	<SImage>
+		<Id>1</Id>
+		<EditorName>2</EditorName>
+		<EditorSuffix>3</EditorSuffix>
+		<EditorDescription>5</EditorDescription>
+		<EditorCategory>4</EditorCategory>
+		<Rows>6</Rows>
+		<Columns>9</Columns>
+		<Anchor>66,78</Anchor>
+	</SImage>
+	<SImage>
+		<Id>2</Id>
+		<EditorName>3</EditorName>
+		<EditorSuffix>4</EditorSuffix>
+		<EditorDescription>6</EditorDescription>
+		<EditorCategory>5</EditorCategory>
+		<Rows>6</Rows>
+		<Columns>32</Columns>
+		<Anchor>24,40</Anchor>
+	</SImage>
+	<SImage>
+		<Id>6</Id>
+		<EditorName>7</EditorName>
+		<EditorSuffix>8</EditorSuffix>
+		<EditorDescription>
+		</EditorDescription>
+		<EditorCategory>9</EditorCategory>
+		<Rows>4</Rows>
+		<Columns>16</Columns>
+		<Anchor>99,62</Anchor>
+	</SImage>
+</images>

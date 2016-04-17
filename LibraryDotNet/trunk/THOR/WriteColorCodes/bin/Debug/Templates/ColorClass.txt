@@ -1,0 +1,94 @@
+﻿/*
+ * ThorColors
+ * liuqiang@2015/11/7 11:11:58
+ * ---- 8< ------------------
+ * NOTE
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using THOR.Windows.Dialogs;
+
+
+//---- 8< ------------------
+
+namespace THOR.Windows.Components.Drawing
+{
+	public class ThorColors
+	{
+		#region constants
+
+		#endregion
+
+		#region variables
+
+		#endregion
+
+		#region construct
+
+		#endregion
+
+		#region methods
+
+		/// <summary>
+		/// 获取控件的主题颜色
+		/// </summary>
+		/// <param name="control"></param>
+		/// <returns></returns>
+		static public Color GetThemeColor(Control control)
+		{
+			return GetThemeColor(control, Focus);
+		}
+
+		/// <summary>
+		/// 获取控件的主题颜色
+		/// </summary>
+		/// <param name="control"></param>
+		/// <param name="defaultColor"></param>
+		/// <returns></returns>
+		static public Color GetThemeColor(Control control, Color defaultColor)
+		{
+			if (control is FlatForm)
+			{
+				FlatForm ff = (FlatForm)control;
+				if (ff.ThemeColor != Color.Transparent)
+				{
+					return ff.ThemeColor;
+				}
+			}
+			else
+			{
+				Form f = control.FindForm();
+				if (f is FlatForm)
+				{
+					FlatForm ff = (FlatForm)f;
+					if (ff.ThemeColor != Color.Transparent)
+					{
+						return ff.ThemeColor;
+					}
+				}
+			}
+
+			return defaultColor;
+		}
+
+		#endregion
+
+		#region properties
+
+		//static public Color ControlLightLight { get { return ThorComponentTheme.Current.ControlLightLightColor; } }
+		
+		//$ColorProperties
+
+		#endregion
+
+		#region events
+
+		#endregion
+	}
+}

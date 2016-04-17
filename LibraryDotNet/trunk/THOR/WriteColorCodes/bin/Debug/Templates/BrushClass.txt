@@ -1,0 +1,50 @@
+﻿/*
+ * ThorBrushs
+ * liuqiang@2015/11/7 12:08:03
+ * ---- 8< ------------------
+ * NOTE
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+//---- 8< ------------------
+
+namespace THOR.Windows.Components.Drawing
+{
+	public class ThorBrushs
+	{
+		#region constants
+
+		#endregion
+
+		#region variables
+
+		#endregion
+
+		#region construct
+
+		#endregion
+
+		#region methods
+
+		#endregion
+
+		#region properties
+
+		//static public SolidBrush ControlLightLight { get { return new SolidBrush(ThorColors.ControlLightLight); } }
+	
+		//$ColorProperties
+
+		#endregion
+
+		#region events
+
+		#endregion
+	}
+}

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A125B33E-8D1D-4D49-AC12-A1BBAD63F261}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolarEditor</RootNamespace>
+    <AssemblyName>SolarEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Images\Components\ThorImageView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Images\Data\CImage.cs" />
+    <Compile Include="Images\Data\ImageImportMethod.cs" />
+    <Compile Include="Images\FrmImageModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Images\FrmImageModule.Designer.cs">
+      <DependentUpon>FrmImageModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\Data\CTerrain.cs" />
+    <Compile Include="Maps\Data\CTerrainController.cs" />
+    <Compile Include="Maps\Data\CTerrainTile.cs" />
+    <Compile Include="Maps\Data\CTerrainTileFlags.cs" />
+    <Compile Include="Maps\Data\CTerrainTileSet.cs" />
+    <Compile Include="Maps\FrmMapModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maps\FrmMapModule.Designer.cs">
+      <DependentUpon>FrmMapModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\FrmTerrainModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maps\FrmTerrainModule.Designer.cs">
+      <DependentUpon>FrmTerrainModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Images\FrmImageModule.resx">
+      <DependentUpon>FrmImageModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\FrmMapModule.resx">
+      <DependentUpon>FrmMapModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\FrmTerrainModule.resx">
+      <DependentUpon>FrmTerrainModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bin\Debug\SolarEditor.exe.config" />
+    <None Include="bin\Debug\SolarEditor.vshost.exe.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THOR.D2D\THOR.D2D.csproj">
+      <Project>{c6bc866d-6bc4-4857-8a71-ef16b534160b}</Project>
+      <Name>THOR.D2D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Images\THOR.Images.csproj">
+      <Project>{841794de-0e79-460e-872e-f57714768842}</Project>
+      <Name>THOR.Images</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Tiled\THOR.Tiled.csproj">
+      <Project>{24a81241-f928-4bd1-9718-d1d8f5408f50}</Project>
+      <Name>THOR.Tiled</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Windows.Editors.UI\THOR.Windows.Editors.UI.csproj">
+      <Project>{9c76da9b-bcc1-4b5a-858a-49fc8d97fb8f}</Project>
+      <Name>THOR.Windows.Editors.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Windows.Editors\THOR.Windows.Editors.csproj">
+      <Project>{3a637285-5e93-4d43-8d44-404c819408b8}</Project>
+      <Name>THOR.Windows.Editors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR.Windows\THOR.Windows.csproj">
+      <Project>{984614bc-061e-42d0-a519-921d3c30f820}</Project>
+      <Name>THOR.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOR\THOR.csproj">
+      <Project>{477b0a92-a2c2-4814-8fbf-df3e3460589d}</Project>
+      <Name>THOR</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Languages\zh-CN.xml" />
+    <Content Include="bin\Debug\SolarEditor.exe" />
+    <Content Include="bin\Debug\SolarEditor.pdb" />
+    <Content Include="bin\Debug\SolarEditor.vshost.exe" />
+    <Content Include="bin\Debug\THOR.dll" />
+    <Content Include="bin\Debug\THOR.pdb" />
+    <Content Include="bin\Debug\THOR.Windows.dll" />
+    <Content Include="bin\Debug\THOR.Windows.Editors.dll" />
+    <Content Include="bin\Debug\THOR.Windows.Editors.pdb" />
+    <Content Include="bin\Debug\THOR.Windows.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Resources\Modules\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"\\psf\Home\Documents\Visual Studio 2012\Projects\AutoVersion\AutoVersion\bin\Debug\AutoVersion.exe" "Z:\Documents\Visual Studio 2012\Projects\SVN\LibraryDotNet\trunk\THOR\SolarEditor"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+\\psf\home\documents\visual studio 2012\Projects\AutoVersion\AutoVersion\bin\Debug\AutoVersion.exe
+\\psf\home\documents\visual studio 2012\Projects\AutoVersion\AutoVersion\bin\Debug\AutoVersion.pdb
+\\psf\home\documents\visual studio 2012\Projects\AutoVersion\AutoVersion\obj\Debug\AutoVersion.exe
+\\psf\home\documents\visual studio 2012\Projects\AutoVersion\AutoVersion\obj\Debug\AutoVersion.pdb

@@ -1,0 +1,6 @@
+﻿
+
+		/// <summary>
+		/// {1}
+		/// </summary>
+		static public SolidBrush {0} {{ get {{ return new SolidBrush(ThorColors.{0}); }} }}

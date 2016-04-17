@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A164CBAC-C04D-49EA-8653-A832644260E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Solar</RootNamespace>
+    <AssemblyName>Solar</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref Projects\Libs\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler">
+      <HintPath>..\Ref Projects\Libs\SharpDX.D3DCompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref Projects\Libs\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D10">
+      <HintPath>..\Ref Projects\Libs\SharpDX.Direct3D10.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref Projects\Libs\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Biz\SAnimationDirectionBiz.cs" />
+    <Compile Include="Animations\Biz\SAnimationLayerBiz.cs" />
+    <Compile Include="Animations\Converter\AlphaConverter.cs" />
+    <Compile Include="Animations\Converter\PercentageConverter.cs" />
+    <Compile Include="Animations\SAnimation.cs" />
+    <Compile Include="Animations\SAnimationDisplayLayer.cs" />
+    <Compile Include="Animations\SAnimationFrame.cs" />
+    <Compile Include="Animations\SAnimationLayer.cs" />
+    <Compile Include="Animations\SAnimationPoint.cs" />
+    <Compile Include="Animations\SAnimationState.cs" />
+    <Compile Include="Animations\SAnimationDirection.cs" />
+    <Compile Include="Animations\SAnimationStateType.cs" />
+    <Compile Include="Animations\SAnimationVector2.cs" />
+    <Compile Include="Animations\SAnimationVector3.cs" />
+    <Compile Include="Animations\SAnimationVector4.cs" />
+    <Compile Include="Common\ICommonToolButtonActions.cs" />
+    <Compile Include="Common\ModelDataNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ModelDataNavigation.Designer.cs">
+      <DependentUpon>ModelDataNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\AnimationView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\AnimationView.Designer.cs">
+      <DependentUpon>AnimationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\AnimationViewStyle.cs" />
+    <Compile Include="Components\D2DRender\AnimationViewContext.cs" />
+    <Compile Include="Components\D2DRender\DirectionDrawing.cs" />
+    <Compile Include="Components\D2DRender\LayerDrawing.cs" />
+    <Compile Include="Components\D2DRender\PlaceDrawing.cs" />
+    <Compile Include="Components\D2DRender\PointDrawing.cs" />
+    <Compile Include="Components\D2DRender\VectorDrawing.cs" />
+    <Compile Include="Components\Drags\DirectionDragMethod.cs" />
+    <Compile Include="Components\Drags\IDragMethod.cs" />
+    <Compile Include="Components\ImageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ImageView.Designer.cs">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ImageViewStyle.cs" />
+    <Compile Include="Components\Timeline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Timeline.Designer.cs">
+      <DependentUpon>Timeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coordinates\CoordinateGridGDIPainter.cs" />
+    <Compile Include="Coordinates\DiamonCoordinate.cs" />
+    <Compile Include="Coordinates\ICoordinate.cs" />
+    <Compile Include="Coordinates\ICoordinateGridPainter.cs" />
+    <Compile Include="Coordinates\SlideCoordinate.cs" />
+    <Compile Include="Coordinates\StaggeredCoordinate.cs" />
+    <Compile Include="Data\Abilities\SModelAbstractAbility.cs" />
+    <Compile Include="Data\Abilities\SModelPassiveAbility.cs" />
+    <Compile Include="Data\DataChangeTypes.cs" />
+    <Compile Include="Data\Effects\SModelAbstractEffect.cs" />
+    <Compile Include="Data\Entities\SEntityAttributeDynamic.cs" />
+    <Compile Include="Data\Entities\SEntityAttributeStatic.cs" />
+    <Compile Include="Data\Serialization\ISModeSerialization.cs" />
+    <Compile Include="Data\Entities\SEntity.cs" />
+    <Compile Include="Data\Serialization\Xml\XmlSModelSerialization.cs" />
+    <Compile Include="Data\SModel.cs" />
+    <Compile Include="Data\SModelManager.cs" />
+    <Compile Include="Data\SModelNode.cs" />
+    <Compile Include="Data\Weapons\SWeapon.cs" />
+    <Compile Include="Dialogs\DialogImageRowsAndColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogImageRowsAndColumns.Designer.cs">
+      <DependentUpon>DialogImageRowsAndColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogModelProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogModelProperty.Designer.cs">
+      <DependentUpon>DialogModelProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogObjectProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogObjectProperty.Designer.cs">
+      <DependentUpon>DialogObjectProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogShootPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogShootPosition.Designer.cs">
+      <DependentUpon>DialogShootPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogSModelSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogSModelSelector.Designer.cs">
+      <DependentUpon>DialogSModelSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogSubTypeSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogSubTypeSelector.Designer.cs">
+      <DependentUpon>DialogSubTypeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbstractModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbstractModule.Designer.cs">
+      <DependentUpon>FrmAbstractModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Images\SImage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Entities\PropertyGrid\" />
+    <Folder Include="Data\Upgrades\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\ModelDataNavigation.resx">
+      <DependentUpon>ModelDataNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ImageView.resx">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Timeline.resx">
+      <DependentUpon>Timeline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogImageRowsAndColumns.resx">
+      <DependentUpon>DialogImageRowsAndColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogModelProperty.resx">
+      <DependentUpon>DialogModelProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogObjectProperty.resx">
+      <DependentUpon>DialogObjectProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogShootPosition.resx">
+      <DependentUpon>DialogShootPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogSModelSelector.resx">
+      <DependentUpon>DialogSModelSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogSubTypeSelector.resx">
+      <DependentUpon>DialogSubTypeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbstractModule.resx">
+      <DependentUpon>FrmAbstractModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ref Projects\THOR.D2D\THOR.D2D.csproj">
+      <Project>{32966f89-6ad0-49e7-862c-3a3588d1d49f}</Project>
+      <Name>THOR.D2D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ref Projects\THOR.JSON\THOR.JSON.csproj">
+      <Project>{a7605f87-10c7-422a-bf62-ba6f98341142}</Project>
+      <Name>THOR.JSON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ref Projects\THOR.Utils\THOR.Utils.csproj">
+      <Project>{04a9c213-5942-429d-b17c-e74e700fff55}</Project>
+      <Name>THOR.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ref Projects\THOR.Windows.UI\THOR.Windows.UI.csproj">
+      <Project>{2442F8F9-2042-4755-BAED-962F7BC2AFA6}</Project>
+      <Name>THOR.Windows.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
