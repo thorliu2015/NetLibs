@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using THOR.ConsoleGUI.Commands;
 using THOR.ConsoleGUI.Components;
 using THOR.ConsoleGUI.ParamTypes;
 
@@ -82,8 +83,8 @@ namespace THOR.ConsoleGUI.Core
 			CommandNames.Clear();
 			Commands.Clear();
 
-			Commands.Add(new ConsoleCommand(null, "cls(清屏)"));
-			Commands.Add(new ConsoleCommand(null, "copy(复制输出信息至剪贴板)"));
+			Commands.Add(new ConsoleCommand(new CommandClear(), "cls(清屏)"));
+			Commands.Add(new ConsoleCommand(new CommandCopy(), "copy(复制输出信息至剪贴板) [(Boolean)rtf(富文本)=true]"));
 
 			//ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "copy(复制)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
 			//ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "cls(清屏)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
@@ -113,7 +114,7 @@ namespace THOR.ConsoleGUI.Core
 
 			ConsoleCommandLine cmd = new ConsoleCommandLine(szCmd);
 
-			if (cmd.Matches.Count == 0) return;
+			if (cmd.Matches==null || cmd.Matches.Count == 0) return;
 
 			string cmdName = cmd.Matches[0].ToString();
 

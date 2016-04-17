@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\CommandClear.cs" />
+    <Compile Include="Commands\CommandCopy.cs" />
     <Compile Include="Components\ConsoleInput.cs">
       <SubType>UserControl</SubType>
     </Compile>

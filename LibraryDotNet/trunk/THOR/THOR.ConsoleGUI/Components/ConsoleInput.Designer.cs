@@ -35,9 +35,9 @@
 			// 
 			this.txtInput.AcceptsReturn = true;
 			this.txtInput.AcceptsTab = true;
-			this.txtInput.BackColor = System.Drawing.Color.Black;
+			this.txtInput.BackColor = System.Drawing.Color.Gainsboro;
 			this.txtInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+			this.txtInput.ForeColor = System.Drawing.Color.Green;
 			this.txtInput.HideSelection = false;
 			this.txtInput.Location = new System.Drawing.Point(0, 0);
 			this.txtInput.Name = "txtInput";
@@ -51,11 +51,11 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.Black;
+			this.BackColor = System.Drawing.Color.Gainsboro;
 			this.Controls.Add(this.txtInput);
 			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+			this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
 			this.Name = "ConsoleInput";
 			this.ResumeLayout(false);
 			this.PerformLayout();

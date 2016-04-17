@@ -20,9 +20,9 @@ namespace THOR.ConsoleGUI.Core
 		private ConsoleCommandOutputColors()
 		{
 			Red = ColorTranslator.FromHtml("#FF6600");
-			Green = ColorTranslator.FromHtml("#66FF00");
+			Green = ColorTranslator.FromHtml("#00C000");
 			Blue = ColorTranslator.FromHtml("#0066FF");
-			Yellow = ColorTranslator.FromHtml("#FFCC00");
+			Yellow = ColorTranslator.FromHtml("#CC9900");
 			Purple = ColorTranslator.FromHtml("#FF0066");
 			White = ColorTranslator.FromHtml("#FFFFFF");
 			Secondary = ColorTranslator.FromHtml("#444444");

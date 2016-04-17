@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using THOR.ConsoleGUI.Core;
 
 namespace THOR.ConsoleGUI
 {
@@ -15,6 +16,8 @@ namespace THOR.ConsoleGUI
 		public FrmConsoleGUI()
 		{
 			InitializeComponent();
+
+			ConsoleManager.Current.Output = consoleOutput1;
 		}
 	}
 }

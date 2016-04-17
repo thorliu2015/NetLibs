@@ -58,6 +58,18 @@ namespace THOR.ConsoleGUI.Components
 			Write(color, content + "\r\n");
 		}
 
+
+		public virtual void Copy(bool rtfmode)
+		{
+			if(rtfmode)
+			{
+				System.Windows.Forms.Clipboard.SetText(txtOutput.Rtf, TextDataFormat.Rtf);
+			}
+			else
+			{
+				System.Windows.Forms.Clipboard.SetText(txtOutput.Text, TextDataFormat.Text);
+			}
+		}
 		
 	}
 }
