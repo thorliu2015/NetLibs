@@ -19,6 +19,8 @@ namespace THOR.ConsoleGUI.Components
 
 		protected bool lockAutoCompolete = false;
 
+		protected List<string> History = new List<string>();
+
 		#endregion
 
 		#region construct
@@ -29,7 +31,6 @@ namespace THOR.ConsoleGUI.Components
 		#endregion
 
 		#region methods
-
 
 		#region layout
 
@@ -200,7 +201,12 @@ namespace THOR.ConsoleGUI.Components
 			}
 			else
 			{
-				Debug.WriteLine("TODO: ExecuteCommandLine");
+				string szCmd = txtInput.Text;
+				History.Add(szCmd);
+				txtInput.Text = "";
+				
+
+				ConsoleManager.Current.Execute(szCmd);
 			}
 		}
 

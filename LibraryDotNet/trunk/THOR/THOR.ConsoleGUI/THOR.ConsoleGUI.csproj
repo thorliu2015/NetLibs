@@ -57,6 +57,7 @@
     <Compile Include="Core\ConsoleCommand.cs" />
     <Compile Include="Core\ConsoleCommandExecutor.cs" />
     <Compile Include="Core\ConsoleCommandLine.cs" />
+    <Compile Include="Core\ConsoleCommandOutputColors.cs" />
     <Compile Include="Core\ConsoleCommandParam.cs" />
     <Compile Include="Core\ConsoleManager.cs" />
     <Compile Include="Core\IConsoleCommandExecutor.cs" />

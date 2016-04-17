@@ -19,12 +19,6 @@ namespace THOR.ConsoleGUI.Components
 			Clear();
 		}
 
-		void t_Tick(object sender, EventArgs e)
-		{
-			Write(Color.Red, DateTime.Now.ToString());
-			WriteLine(Color.Blue, " blah blah");
-		}
-
 		/// <summary>
 		/// 清空内容
 		/// </summary>
@@ -46,7 +40,7 @@ namespace THOR.ConsoleGUI.Components
 			txtOutput.SelectionColor = color;
 			txtOutput.SelectedText = content;
 
-			
+
 			txtOutput.Select(txtOutput.Text.Length, 0);
 			txtOutput.ScrollToCaret();
 

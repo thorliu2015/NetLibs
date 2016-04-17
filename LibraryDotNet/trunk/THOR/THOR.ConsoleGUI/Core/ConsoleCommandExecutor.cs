@@ -32,7 +32,7 @@ namespace THOR.ConsoleGUI.Core
 
 		#region methods
 
-		public virtual void Execute(Dictionary<string, object> args)
+		public virtual void Execute(object[] args)
 		{
 		}
 

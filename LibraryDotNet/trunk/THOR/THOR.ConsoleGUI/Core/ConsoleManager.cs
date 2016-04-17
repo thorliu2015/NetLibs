@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using THOR.ConsoleGUI.Components;
 using THOR.ConsoleGUI.ParamTypes;
 
 
@@ -25,7 +26,7 @@ namespace THOR.ConsoleGUI.Core
 
 		#region variables
 
-		
+
 
 		#endregion
 
@@ -37,7 +38,7 @@ namespace THOR.ConsoleGUI.Core
 		{
 			Current = new ConsoleManager();
 		}
-		
+
 		private ConsoleManager()
 		{
 			Commands = new List<ConsoleCommand>();
@@ -83,7 +84,6 @@ namespace THOR.ConsoleGUI.Core
 
 			Commands.Add(new ConsoleCommand(null, "cls(清屏)"));
 			Commands.Add(new ConsoleCommand(null, "copy(复制输出信息至剪贴板)"));
-			Commands.Add(new ConsoleCommand(null, "test(测试) <(test)test(文件)>"));
 
 			//ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "copy(复制)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
 			//ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "cls(清屏)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
@@ -102,6 +102,82 @@ namespace THOR.ConsoleGUI.Core
 			CommandNames.Sort();
 		}
 
+
+		public void Execute(string szCmd)
+		{
+
+			if (Output != null)
+				Output.WriteLine(
+					ConsoleCommandOutputColors.Current.Command,
+					String.Format("> {0}", szCmd));
+
+			ConsoleCommandLine cmd = new ConsoleCommandLine(szCmd);
+
+			if (cmd.Matches.Count == 0) return;
+
+			string cmdName = cmd.Matches[0].ToString();
+
+			if (!CommandNames.Contains(cmdName))
+			{
+				if (Output != null)
+					Output.WriteLine(
+						ConsoleCommandOutputColors.Current.Error,
+						String.Format("<{0}> not found.", cmdName));
+				return;
+			}
+
+			foreach (ConsoleCommand command in Commands)
+			{
+				if (command.Name == cmdName)
+				{
+					if (command.Params.Count != cmd.Matches.Count - 1)
+					{
+						if (Output != null)
+							Output.WriteLine(
+								ConsoleCommandOutputColors.Current.Error,
+								String.Format("<{0}> params error.", command.Name));
+					}
+					else
+					{
+						if (command.Executor != null)
+						{
+							object[] args = GetCommandArgs(command, cmd);
+
+							command.Executor.Execute(args);
+						}
+						else
+						{
+							if (Output != null)
+								Output.WriteLine(
+									ConsoleCommandOutputColors.Current.Error, 
+									String.Format("<{0}> No executor.",command.Name));
+						}
+					}
+					return;
+				}
+			}
+		}
+
+		private object[] GetCommandArgs(ConsoleCommand command, ConsoleCommandLine cmd)
+		{
+
+			object[] result = new object[command.Params.Count];
+
+			for (int i = 0; i < command.Params.Count; i++)
+			{
+				object argValue = null;
+
+				if (ParamTypes.ContainsKey(command.Params[i].ParamType))
+				{
+					string szArg = cmd.Matches[i + 1].Value;
+					argValue = ParamTypes[command.Params[i].ParamType].GetObject(szArg);
+				}
+
+				result[i] = argValue;
+			}
+
+			return result;
+		}
 		#endregion
 
 		#region properties
@@ -111,9 +187,17 @@ namespace THOR.ConsoleGUI.Core
 
 		public Dictionary<string, IConsoleParamType> ParamTypes { get; protected set; }
 
+		public ConsoleOutput Output { get; set; }
+
 		#endregion
 
 		#region events
+
+
+
+
+	
+		
 
 		#endregion
 	}

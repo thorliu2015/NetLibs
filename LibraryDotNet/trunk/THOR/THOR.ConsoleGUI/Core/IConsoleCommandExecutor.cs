@@ -8,6 +8,6 @@ namespace THOR.ConsoleGUI.Core
 {
 	public interface IConsoleCommandExecutor
 	{
-		void Execute(Dictionary<string, object> args);
+		void Execute(object[] args);
 	}
 }
