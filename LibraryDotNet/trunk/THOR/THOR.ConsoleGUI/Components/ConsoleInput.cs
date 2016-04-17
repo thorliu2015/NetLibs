@@ -77,7 +77,7 @@ namespace THOR.ConsoleGUI.Components
 			}
 
 			//F1
-			if(KeyUtils.IsKey(e, Keys.F1))
+			if (KeyUtils.IsKey(e, Keys.F1))
 			{
 				CommandLineHelp();
 				e.Handled = true;
@@ -159,6 +159,10 @@ namespace THOR.ConsoleGUI.Components
 
 		private void txtInput_KeyPress(object sender, KeyPressEventArgs e)
 		{
+			if(e.KeyChar=='\r')
+			{
+				e.Handled = true;
+			}
 		}
 
 		private void txtInput_TextChanged(object sender, EventArgs e)
@@ -189,7 +193,15 @@ namespace THOR.ConsoleGUI.Components
 		/// </summary>
 		protected virtual void ExecuteCommandLine()
 		{
-			Debug.WriteLine("TODO: ExecuteCommandLine");
+			if (txtInput.SelectionLength > 0)
+			{
+				txtInput.Select(txtInput.SelectionStart + txtInput.SelectionLength, 0);
+				AutoComplete();
+			}
+			else
+			{
+				Debug.WriteLine("TODO: ExecuteCommandLine");
+			}
 		}
 
 		/// <summary>
@@ -250,8 +262,8 @@ namespace THOR.ConsoleGUI.Components
 
 		#endregion
 
-		
 
-		
+
+
 	}
 }

@@ -70,8 +70,10 @@ namespace THOR.ConsoleGUI.Core
 			ParamTypes["Single"] = new ConsoleParamSingle();
 			ParamTypes["Double"] = new ConsoleParamDouble();
 
-			ParamTypes["File"] = ConsoleParamPath.GetFiles("*.*", @"Y:\NetProjects\git\NetLibs\Tools\Solar\Ref Projects\THOR.JSON\");
+			ParamTypes["File"] = ConsoleParamPath.GetFiles("*.*", "");
 			ParamTypes["Directory"] = ConsoleParamPath.GetDirectories("*.*", "");
+
+			ParamTypes["test"] = new ConsoleParamEnum(typeof(System.Windows.Forms.FormStartPosition));
 		}
 
 		protected void InitCommands()
@@ -81,7 +83,7 @@ namespace THOR.ConsoleGUI.Core
 
 			Commands.Add(new ConsoleCommand(null, "cls(清屏)"));
 			Commands.Add(new ConsoleCommand(null, "copy(复制输出信息至剪贴板)"));
-			Commands.Add(new ConsoleCommand(null, "test(测试) <(File)test(文件)>"));
+			Commands.Add(new ConsoleCommand(null, "test(测试) <(test)test(文件)>"));
 
 			//ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "copy(复制)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
 			//ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "cls(清屏)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));

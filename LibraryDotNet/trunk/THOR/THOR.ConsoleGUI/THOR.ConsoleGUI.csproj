@@ -69,6 +69,7 @@
       <DependentUpon>FrmConsoleGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="ParamTypes\ConsoleParamBoolean.cs" />
+    <Compile Include="ParamTypes\ConsoleParamEnum.cs" />
     <Compile Include="ParamTypes\ConsoleParamNumbers.cs" />
     <Compile Include="ParamTypes\ConsoleParamPath.cs" />
     <Compile Include="ParamTypes\ConsoleParamString.cs" />
