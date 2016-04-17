@@ -17,9 +17,7 @@ namespace THORConsoleGUITest
 		static void Main()
 		{
 			
-			ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "copy(复制)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
-			ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "cls(清屏)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
-
+		
 			ConsoleManager.Current.Setup();
 
 			//------------

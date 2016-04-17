@@ -150,9 +150,9 @@ namespace THOR.ConsoleGUI.Core
 					if (cmd.Name != name) continue;
 
 					//查找匹配的参数
-					if (index >= 0 && index < cmd.Params.Count)
+					if (index > 0 && index <= cmd.Params.Count)
 					{
-						ConsoleCommandParam p = cmd.Params[index];
+						ConsoleCommandParam p = cmd.Params[index - 1];
 
 						//匹配默认参数
 						if (p.DefaultValue != null && p.DefaultValue.Trim().Length > 0)
@@ -169,9 +169,9 @@ namespace THOR.ConsoleGUI.Core
 						IConsoleParamType paramType = ConsoleManager.Current.ParamTypes[p.ParamType];
 
 						string r = paramType.Match(input);
-						if (r.Length != 0) return r;
+						if (r.Length > 0) return r;
 
-						return p.ParamName;
+						return "";
 					}
 				}
 			}

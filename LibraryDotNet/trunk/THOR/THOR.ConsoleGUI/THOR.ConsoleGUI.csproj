@@ -70,8 +70,7 @@
     </Compile>
     <Compile Include="ParamTypes\ConsoleParamBoolean.cs" />
     <Compile Include="ParamTypes\ConsoleParamNumbers.cs" />
-    <Compile Include="ParamTypes\ConsoleParamPathFile.cs" />
-    <Compile Include="ParamTypes\ConsoleParamPathFolder.cs" />
+    <Compile Include="ParamTypes\ConsoleParamPath.cs" />
     <Compile Include="ParamTypes\ConsoleParamString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
