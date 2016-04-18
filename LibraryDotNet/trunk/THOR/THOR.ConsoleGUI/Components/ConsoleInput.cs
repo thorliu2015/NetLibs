@@ -13,263 +13,290 @@ using System.Diagnostics;
 
 namespace THOR.ConsoleGUI.Components
 {
-	public partial class ConsoleInput : UserControl
-	{
-		#region variables
+    public partial class ConsoleInput : UserControl
+    {
+        #region variables
 
-		protected bool lockAutoCompolete = false;
+        protected bool lockAutoCompolete = false;
 
-		protected List<string> History = new List<string>();
+        protected List<string> History = new List<string>();
+        protected int HistoryIndex = -1;
 
-		#endregion
+        #endregion
 
-		#region construct
-		public ConsoleInput()
-		{
-			InitializeComponent();
-		}
-		#endregion
+        #region construct
+        public ConsoleInput()
+        {
+            InitializeComponent();
+        }
+        #endregion
 
-		#region methods
+        #region methods
 
-		#region layout
+        #region layout
 
-		protected override void OnResize(EventArgs e)
-		{
-			base.OnResize(e);
-			LayoutUI();
-		}
+        protected override void OnResize(EventArgs e)
+        {
+            base.OnResize(e);
+            LayoutUI();
+        }
 
-		protected virtual void LayoutUI()
-		{
-			int pHeight = this.Height;
-			int pMargin = (pHeight - txtInput.Height) / 2;
+        protected virtual void LayoutUI()
+        {
+            int pHeight = this.Height;
+            int pMargin = (pHeight - txtInput.Height) / 2;
 
-			txtInput.Location = new Point(pMargin, pMargin);
-			txtInput.Size = new Size(Width - pMargin * 2, txtInput.Height);
-		}
+            txtInput.Location = new Point(pMargin, pMargin);
+            txtInput.Size = new Size(Width - pMargin * 2, txtInput.Height);
+        }
 
-		#endregion
+        #endregion
 
-		#region input
-
-
-		/// <summary>
-		/// 键盘事件
-		/// </summary>
-		/// <param name="sender"></param>	
-		/// <param name="e"></param>
-		protected virtual void txtInput_KeyDown(object sender, KeyEventArgs e)
-		{
-			//退格
-			if (KeyUtils.IsKey(e, Keys.Back))
-			{
-				lockAutoCompolete = true;
-				e.Handled = true;
-				return;
-			}
-
-			//回车
-			if (e.KeyCode == Keys.Enter)
-			{
-				ExecuteCommandLine();
-				e.Handled = true;
-				return;
-			}
-
-			//F1
-			if (KeyUtils.IsKey(e, Keys.F1))
-			{
-				CommandLineHelp();
-				e.Handled = true;
-				return;
-			}
-
-			//SHIFT + BACK
-			if (KeyUtils.IsShiftKey(e, Keys.Back))
-			{
-				txtInput.Text = "";
-				e.Handled = true;
-				return;
-			}
-
-			//UP
-			if (KeyUtils.IsKey(e, Keys.Up))
-			{
-				PrevCommandLine();
-				e.Handled = true;
-				return;
-			}
-
-			//DOWN
-			if (KeyUtils.IsKey(e, Keys.Down))
-			{
-				NextCommandLine();
-				e.Handled = true;
-				return;
-			}
-
-			//SHIFT + UP
-			if (KeyUtils.IsShiftKey(e, Keys.Up))
-			{
-				SelectPrevGroup();
-				e.Handled = true;
-				return;
-			}
-
-			//SHIFT + DOWN
-			if (KeyUtils.IsShiftKey(e, Keys.Down))
-			{
-				SelectNextGroup();
-				e.Handled = true;
-				return;
-			}
-
-			//ALT + UP
-			if (KeyUtils.IsAltKey(e, Keys.Up))
-			{
-				SwitchPrevGroup();
-				e.Handled = true;
-				return;
-			}
-
-			//ALT + DOWN
-			if (KeyUtils.IsAltKey(e, Keys.Down))
-			{
-				SwitchNextGroup();
-				e.Handled = true;
-				return;
-			}
-
-			//ALT + Left
-			if (KeyUtils.IsAltKey(e, Keys.Left))
-			{
-				e.Handled = true;
-				txtInput.Select(0, 0);
-				return;
-			}
-
-			//ALT + Right
-			if (KeyUtils.IsAltKey(e, Keys.Right))
-			{
-				e.Handled = true;
-				txtInput.Select(txtInput.Text.Length, 0);
-				return;
-			}
-		}
-
-		private void txtInput_KeyPress(object sender, KeyPressEventArgs e)
-		{
-			if(e.KeyChar=='\r')
-			{
-				e.Handled = true;
-			}
-		}
-
-		private void txtInput_TextChanged(object sender, EventArgs e)
-		{
-			AutoComplete();
-		}
-
-		/// <summary>
-		/// 自动完成
-		/// </summary>
-		protected virtual void AutoComplete()
-		{
-			if (lockAutoCompolete)
-			{
-				lockAutoCompolete = false;
-				return;
-			}
+        #region input
 
 
-			lockAutoCompolete = true;
-			AutoCompleteManager.Update(txtInput);
-			lockAutoCompolete = false;
-		}
-		#endregion
+        /// <summary>
+        /// 键盘事件
+        /// </summary>
+        /// <param name="sender"></param>	
+        /// <param name="e"></param>
+        protected virtual void txtInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            //退格
+            if (KeyUtils.IsKey(e, Keys.Back))
+            {
+                lockAutoCompolete = true;
+                e.Handled = true;
+                return;
+            }
 
-		/// <summary>
-		/// 执行命令行
-		/// </summary>
-		protected virtual void ExecuteCommandLine()
-		{
-			if (txtInput.SelectionLength > 0)
-			{
-				txtInput.Select(txtInput.SelectionStart + txtInput.SelectionLength, 0);
-				AutoComplete();
-			}
-			else
-			{
-				string szCmd = txtInput.Text;
-				History.Add(szCmd);
-				txtInput.Text = "";
-				
+            //回车
+            if (e.KeyCode == Keys.Enter)
+            {
+                ExecuteCommandLine();
+                e.Handled = true;
+                return;
+            }
 
-				ConsoleManager.Current.Execute(szCmd);
-			}
-		}
+            //F1
+            if (KeyUtils.IsKey(e, Keys.F1))
+            {
+                CommandLineHelp();
+                e.Handled = true;
+                return;
+            }
 
-		/// <summary>
-		/// 命令行帮助
-		/// </summary>
-		protected virtual void CommandLineHelp()
-		{
-			Debug.WriteLine("TODO: CommandLineHelp");
-		}
+            //SHIFT + BACK
+            if (KeyUtils.IsShiftKey(e, Keys.Back))
+            {
+                txtInput.Text = "";
+                e.Handled = true;
+                return;
+            }
 
-		/// <summary>
-		/// 上一条指令
-		/// </summary>
-		protected virtual void PrevCommandLine()
-		{
-			Debug.WriteLine("TODO: PrevCommandLine");
-		}
+            //UP
+            if (KeyUtils.IsKey(e, Keys.Up))
+            {
+                PrevCommandLine();
+                e.Handled = true;
+                return;
+            }
 
-		/// <summary>
-		/// 下一条指令
-		/// </summary>
-		protected virtual void NextCommandLine()
-		{
-			Debug.WriteLine("TODO: NextCommandLine");
-		}
+            //DOWN
+            if (KeyUtils.IsKey(e, Keys.Down))
+            {
+                NextCommandLine();
+                e.Handled = true;
+                return;
+            }
 
-		/// <summary>
-		/// 选择上一组
-		/// </summary>
-		protected virtual void SelectPrevGroup()
-		{
-			AutoCompleteManager.SelectPrevGroup(txtInput);
-		}
+            //SHIFT + UP
+            if (KeyUtils.IsShiftKey(e, Keys.Up))
+            {
+                SelectPrevGroup();
+                e.Handled = true;
+                return;
+            }
 
-		/// <summary>
-		/// 选择下一组
-		/// </summary>
-		protected virtual void SelectNextGroup()
-		{
-			AutoCompleteManager.SelectNextGroup(txtInput);
-		}
+            //SHIFT + DOWN
+            if (KeyUtils.IsShiftKey(e, Keys.Down))
+            {
+                SelectNextGroup();
+                e.Handled = true;
+                return;
+            }
 
-		/// <summary>
-		/// 切换上一组数据
-		/// </summary>
-		protected virtual void SwitchPrevGroup()
-		{
-			Debug.WriteLine("TODO: SwitchPrevGroup");
-		}
+            //ALT + UP
+            if (KeyUtils.IsAltKey(e, Keys.Up))
+            {
+                SwitchPrevGroup();
+                e.Handled = true;
+                return;
+            }
 
-		/// <summary>
-		/// 切换下一组数据
-		/// </summary>
-		protected virtual void SwitchNextGroup()
-		{
-			Debug.WriteLine("TODO: SwitchNextGroup");
-		}
+            //ALT + DOWN
+            if (KeyUtils.IsAltKey(e, Keys.Down))
+            {
+                SwitchNextGroup();
+                e.Handled = true;
+                return;
+            }
 
-		#endregion
+            //ALT + Left
+            if (KeyUtils.IsAltKey(e, Keys.Left))
+            {
+                e.Handled = true;
+                txtInput.Select(0, 0);
+                return;
+            }
+
+            //ALT + Right
+            if (KeyUtils.IsAltKey(e, Keys.Right))
+            {
+                e.Handled = true;
+                txtInput.Select(txtInput.Text.Length, 0);
+                return;
+            }
+        }
+
+        private void txtInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtInput_TextChanged(object sender, EventArgs e)
+        {
+            AutoComplete();
+        }
+
+        /// <summary>
+        /// 自动完成
+        /// </summary>
+        protected virtual void AutoComplete()
+        {
+            if (lockAutoCompolete)
+            {
+                lockAutoCompolete = false;
+                return;
+            }
+
+
+            lockAutoCompolete = true;
+            AutoCompleteManager.Update(txtInput);
+            lockAutoCompolete = false;
+        }
+        #endregion
+
+        /// <summary>
+        /// 执行命令行
+        /// </summary>
+        protected virtual void ExecuteCommandLine()
+        {
+            if (txtInput.SelectionLength > 0)
+            {
+                txtInput.Select(txtInput.SelectionStart + txtInput.SelectionLength, 0);
+                AutoComplete();
+            }
+            else
+            {
+                string szCmd = txtInput.Text;
+                History.Add(szCmd);
+                txtInput.Text = "";
+
+                ConsoleManager.Current.Execute(szCmd);
+            }
+        }
+
+        /// <summary>
+        /// 命令行帮助
+        /// </summary>
+        protected virtual void CommandLineHelp()
+        {
+            Debug.WriteLine("TODO: CommandLineHelp");
+        }
+
+        /// <summary>
+        /// 上一条指令
+        /// </summary>
+        protected virtual void PrevCommandLine()
+        {
+            if (History.Count == 0) return;
+
+            string szCmd = "";
+
+            if (HistoryIndex < 0)
+            {
+                HistoryIndex = History.Count;
+            }
+
+            HistoryIndex--;
+
+            if(HistoryIndex >= 0)
+            {
+                szCmd = History[HistoryIndex];
+            }
+
+            lockAutoCompolete = true;
+            txtInput.Text = szCmd;
+        }
+
+        /// <summary>
+        /// 下一条指令
+        /// </summary>
+        protected virtual void NextCommandLine()
+        {
+            if (History.Count == 0) return;
+            if (HistoryIndex < 0) return;
+
+            if(HistoryIndex < History.Count-1)
+            {
+                HistoryIndex++;
+
+                string szCmd = History[HistoryIndex];
+                lockAutoCompolete = true;
+                txtInput.Text = szCmd;
+            }
+        }
+
+        /// <summary>
+        /// 选择上一组
+        /// </summary>
+        protected virtual void SelectPrevGroup()
+        {
+            AutoCompleteManager.SelectPrevGroup(txtInput);
+        }
+
+        /// <summary>
+        /// 选择下一组
+        /// </summary>
+        protected virtual void SelectNextGroup()
+        {
+            AutoCompleteManager.SelectNextGroup(txtInput);
+        }
+
+        /// <summary>
+        /// 切换上一组数据
+        /// </summary>
+        protected virtual void SwitchPrevGroup()
+        {
+            Debug.WriteLine("TODO: SwitchPrevGroup");
+        }
+
+        /// <summary>
+        /// 切换下一组数据
+        /// </summary>
+        protected virtual void SwitchNextGroup()
+        {
+            Debug.WriteLine("TODO: SwitchNextGroup");
+        }
+
+        #endregion
 
 
 
 
-	}
+    }
 }
