@@ -86,9 +86,7 @@ namespace THOR.ConsoleGUI.Core
 			Commands.Add(new ConsoleCommand(new CommandClear(), "cls(清屏)"));
 			Commands.Add(new ConsoleCommand(new CommandCopy(), "copy(复制输出信息至剪贴板) [(Boolean)rtf(富文本)=true]"));
 
-			//ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "copy(复制)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
-			//ConsoleManager.Current.Commands.Add(new ConsoleCommand(null, "cls(清屏)  <(type)name(desc)=defaultValue> [(type)name(desc)=defaultValue]"));
-
+			//TODO: help
 		}
 
 		public void Setup()
