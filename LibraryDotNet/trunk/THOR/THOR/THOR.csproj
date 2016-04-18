@@ -71,6 +71,7 @@
     <Compile Include="Serialization\XmlEntities\XmlEntityEncoder.cs" />
     <Compile Include="Serialization\XmlEntities\XmlEntityPropertyAttribute.cs" />
     <Compile Include="Serialization\XmlEntities\XmlEntityPropertyMode.cs" />
+    <Compile Include="Utils\ByteFormater.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

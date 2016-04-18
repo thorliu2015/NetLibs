@@ -77,6 +77,10 @@
       <Project>{984614bc-061e-42d0-a519-921d3c30f820}</Project>
       <Name>THOR.Windows</Name>
     </ProjectReference>
+    <ProjectReference Include="..\THOR\THOR.csproj">
+      <Project>{477b0a92-a2c2-4814-8fbf-df3e3460589d}</Project>
+      <Name>THOR</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

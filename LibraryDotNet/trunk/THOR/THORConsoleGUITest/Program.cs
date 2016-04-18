@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using THOR.ConsoleGUI;
 using THOR.ConsoleGUI.Core;
+using THOR.Utils;
 
 namespace THORConsoleGUITest
 {
@@ -16,7 +17,14 @@ namespace THORConsoleGUITest
 		[STAThread]
 		static void Main()
 		{
-			
+            Byte[] bytes = new byte[250];
+
+            for(int i = 0; i <bytes.Length; i++)
+            {
+                bytes[i] = Convert.ToByte(i);
+            }
+
+            string szBytes = ByteFormater.Format(bytes);
 		
 			ConsoleManager.Current.Setup();
 
